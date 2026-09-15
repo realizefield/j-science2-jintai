@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第1講 消化と吸収 | GAMBA中学理科 人体</title>
+<link rel="stylesheet" href="app.css">
+<style>
+  /* このページだけで使う「画像プレースホルダー」用のスタイル */
+  .photo-placeholder {
+    border: 2px dashed #B0BEC5;
+    border-radius: 12px;
+    background: #F5F7F8;
+    padding: 18px;
+    text-align: center;
+    color: #607D8B;
+    font-size: 13px;
+    margin: 14px 0;
+  }
+  .photo-placeholder .ph-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #455A64;
+    margin-bottom: 6px;
+  }
+  .photo-placeholder .ph-note {
+    font-size: 12px;
+    color: #90A4AE;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body data-page="jintai_ch01">
+
+<nav class="topnav">
+  <span class="brand">🧬 GAMBA中学理科 人体</span>
+  <span class="sep">|</span>
+  <a href="index.html">📊 単元表</a>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="crumb">第1講 / 人体のはたらき</div>
+  <h1>消化と吸収 <span class="stars">★☆☆</span></h1>
+  <p class="sub">食べたものが、どのように分解され、体の中に取り入れられるのかを学びます。消化液・消化酵素のはたらきと、小腸での吸収のしくみを、順番に確認していきましょう。</p>
+</header>
+
+<main>
+
+<!-- ================================================== -->
+<!--  単元1:消化と消化酵素の基礎                          -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">1</span>消化・消化管・消化酵素とは?</div>
+
+  <div class="photo-placeholder">
+    <div class="ph-title">🖼️ ここに画像を挿入</div>
+    ヒトの消化器官全体図(口・食道・胃・小腸・大腸がひとつながりになっている図)<br>
+    <span class="ph-note">※ ChatGPT等で生成した写実的なイラストに置き換えてください</span>
+  </div>
+
+  <!-- ▼ 説明を読む(チャレンジ機能を統合) -->
+  <div class="stage challenge" data-ch-id="u1" data-target="#u1-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <button class="audio-btn" onclick="playAudio('u1_intro')">
+          <span class="ico">▶</span> 音声で聞く
+        </button>
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="u1-readbox">
+      <p>私たちが食べた食物には、体を動かすための栄養分がふくまれています。しかし、そのままでは分子が大きすぎて、体の中に吸収することができません。そこで、食物を細かく分解し、体に吸収しやすい小さな物質に変えるはたらきを「<span class="kw-blank" data-a="消化">消化</span>」といいます。</p>
+
+      <p>消化を行う器官を「<span class="kw-blank" data-a="消化器官">消化器官</span>」といい、口・食道・胃・小腸・大腸などがあります。これらの器官が一本の長い管のようにつながったものを「<span class="kw-blank" data-a="消化管">消化管</span>」といい、口→食道→胃→小腸→大腸→肛門の順につながっています。</p>
+
+      <div class="figure">
+        <svg width="560" height="120" viewBox="0 0 560 120" role="img" aria-label="消化管:口から肛門までのつながり">
+          <defs>
+            <marker id="arrow1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#4FC3F7"/>
+            </marker>
+          </defs>
+          <line x1="42" y1="60" x2="518" y2="60" stroke="#B3E5FC" stroke-width="6"/>
+          <g font-family="sans-serif" font-size="13" text-anchor="middle">
+            <circle cx="40" cy="60" r="34" fill="#4FC3F7"/>
+            <text x="40" y="65" fill="white" font-weight="bold">口</text>
+            <circle cx="140" cy="60" r="34" fill="#29B6F6"/>
+            <text x="140" y="65" fill="white" font-weight="bold">食道</text>
+            <circle cx="240" cy="60" r="34" fill="#039BE5"/>
+            <text x="240" y="65" fill="white" font-weight="bold">胃</text>
+            <circle cx="340" cy="60" r="34" fill="#0288D1"/>
+            <text x="340" y="65" fill="white" font-weight="bold">小腸</text>
+            <circle cx="440" cy="60" r="34" fill="#0277BD"/>
+            <text x="440" y="65" fill="white" font-weight="bold">大腸</text>
+            <circle cx="530" cy="60" r="28" fill="#01579B"/>
+            <text x="530" y="64" fill="white" font-weight="bold" font-size="12">肛門</text>
+          </g>
+        </svg>
+        <div class="caption">▲ 消化管:口から肛門まで、ひとつながりの管になっている</div>
+      </div>
+
+      <p>消化液せんでつくられ、消化管に分泌される液を「<span class="kw-blank" data-a="消化液">消化液</span>」といいます。だ液・胃液・胆汁・すい液・腸液などがあります。</p>
+
+      <p>消化液の中で、栄養分を分解するはたらきをもつ物質を「<span class="kw-blank" data-a="消化酵素">消化酵素</span>」といいます。だ液にふくまれる<span class="kw">アミラーゼ</span>や、胃液にふくまれる<span class="kw">ペプシン</span>などが消化酵素です。消化酵素は決まった物質にだけ働き、はたらいたあとも自分自身は変化しないという特ちょうがあります。</p>
+
+      <p>注意しよう!消化液の中でも、肝臓でつくられる「<span class="kw">胆汁</span>」には消化酵素がふくまれていません。胆汁は脂肪を細かい粒にして、消化酵素が働きやすくする役割をもっています。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>消化 …… 食物を体に吸収しやすい小さな物質に変えるはたらき</li>
+        <li>消化管 …… 口→食道→胃→小腸→大腸→肛門とつながる1本の管</li>
+        <li>消化液 …… だ液・胃液・胆汁・すい液・腸液など</li>
+        <li>消化酵素 …… だ液のアミラーゼ、胃液のペプシンなど。特定の物質だけを分解する</li>
+        <li>注意!胆汁には消化酵素がふくまれていない(脂肪を細かくするだけ)</li>
+      </ul>
+    </div>
+
+    <!-- 語群(チャレンジ開始時のみ表示) -->
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <!-- ▼ ミニテスト -->
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全2問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>食物を体に吸収しやすい小さな物質に変えるはたらきを「消化」という。</div>
+      <div class="mt-choices">
+        <button class="mt-c" data-v="o">○</button>
+        <button class="mt-c" data-v="x">×</button>
+      </div>
+      <div class="mt-exp">○ 正解です。消化された栄養分は、小腸のかべから体の中に吸収されます。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>胆汁には、脂肪を分解する消化酵素がふくまれている。</div>
+      <div class="mt-choices">
+        <button class="mt-c" data-v="o">○</button>
+        <button class="mt-c" data-v="x">×</button>
+      </div>
+      <div class="mt-exp">× 胆汁には<span class="kw">消化酵素はふくまれていません</span>。胆汁は脂肪を細かい粒にして、すい液中の消化酵素が働きやすくする役割をもっています。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;">
+      <button class="mt-block-reset">↻ もう一度</button>
+    </div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-u1" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('u1')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!--  単元2:だ液のはたらきを調べる実験                      -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">2</span>だ液のはたらきを調べよう</div>
+
+  <!-- ▼ 説明を読む(チャレンジ機能を統合) -->
+  <div class="stage challenge" data-ch-id="u2" data-target="#u2-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <button class="audio-btn" onclick="playAudio('u2_intro')">
+          <span class="ico">▶</span> 音声で聞く
+        </button>
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="u2-readbox">
+      <p>だ液には消化酵素の<span class="kw-blank" data-a="アミラーゼ">アミラーゼ</span>がふくまれています。アミラーゼは、デンプンを<span class="kw-blank" data-a="糖">糖</span>に分解するはたらきをもっています。</p>
+
+      <p>だ液は、体温に近い37~40℃くらいのときにもっともよく働きます。反対に、70℃以上の高温になると、アミラーゼの成分であるタンパク質のつくりがこわれてしまい、はたらき<span class="kw-blank" data-a="ません">ません</span>。(いちど高温でこわれたタンパク質は、温度を下げてもはたらきが戻りません)</p>
+
+      <p>デンプンと糖を見分けるには、次の2つの薬品を使います。</p>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>薬品</th><th>使い方</th><th>結果</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>ヨウ素液</th><td>液体に加えるだけ</td><td>デンプンがあると<strong>青紫色</strong>に変化する</td></tr>
+          <tr><th>ベネジクト液</th><td>液体に加えて加熱する</td><td>糖があると<strong>赤褐色の沈殿</strong>ができる</td></tr>
+        </tbody>
+      </table>
+
+      <p>ベネジクト液を加熱するときは、液が急に沸騰して飛び散る「<span class="kw-blank" data-a="突沸">突沸</span>」を防ぐため、必ず<span class="kw-blank" data-a="沸とう石">沸とう石</span>を入れてから加熱します。</p>
+
+      <div class="figure">
+        <svg width="380" height="190" viewBox="0 0 380 190" role="img" aria-label="だ液のはたらきを調べる実験:試験管AとBを40度のお湯で温める">
+          <rect x="10" y="90" width="360" height="80" rx="10" fill="#B3E5FC"/>
+          <text x="190" y="180" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#0277BD" font-weight="bold">約40℃のお湯</text>
+
+          <!-- 試験管A -->
+          <rect x="95" y="20" width="34" height="90" rx="6" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2"/>
+          <rect x="98" y="60" width="28" height="48" fill="#FFF9C4"/>
+          <text x="112" y="16" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">A</text>
+          <text x="112" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">デンプン溶液</text>
+          <text x="112" y="156" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">のみ</text>
+
+          <!-- 試験管B -->
+          <rect x="245" y="20" width="34" height="90" rx="6" fill="#E1F5FE" stroke="#4FC3F7" stroke-width="2"/>
+          <rect x="248" y="60" width="28" height="48" fill="#FFF9C4"/>
+          <text x="262" y="16" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">B</text>
+          <text x="262" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">デンプン溶液</text>
+          <text x="262" y="156" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">+ だ液</text>
+        </svg>
+        <div class="caption">▲ 試験管Aと試験管Bを、約40℃のお湯で十分に温める実験</div>
+      </div>
+
+      <p>【実験】試験管Aにはデンプン溶液のみ、試験管Bにはデンプン溶液とだ液を入れ、約40℃のお湯で十分に温めました。</p>
+
+      <p>Bではだ液の中の<span class="kw-blank" data-a="アミラーゼ">アミラーゼ</span>が働くため、Bのデンプンはほとんど分解されて<span class="kw-blank" data-a="糖">糖</span>に変わっています。一方、だ液を加えていないAは、消化酵素が働かないため、<span class="kw-blank" data-a="デンプン">デンプン</span>のままです。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>アミラーゼ …… だ液にふくまれる消化酵素。デンプンを糖に分解する</li>
+        <li>だ液は体温に近い37~40℃でよく働き、70℃以上ではたらきません</li>
+        <li>デンプンの検出 → ヨウ素液(青紫色)</li>
+        <li>糖の検出 → ベネジクト液 + 加熱(赤褐色の沈殿)</li>
+        <li>加熱するときは、突沸を防ぐため沸とう石を入れる</li>
+      </ul>
+    </div>
+
+    <!-- 語群(チャレンジ開始時のみ表示) -->
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <!-- ▼ ミニテスト -->
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全2問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>だ液にふくまれるアミラーゼは、デンプンを糖に分解する。</div>
+      <div class="mt-choices">
+        <button class="mt-c" data-v="o">○</button>
+        <button class="mt-c" data-v="x">×</button>
+      </div>
+      <div class="mt-exp">○ 正解です。だ液は体温に近い温度でもっともよく働きます。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>だ液は100℃でもっともよく働く。</div>
+      <div class="mt-choices">
+        <button class="mt-c" data-v="o">○</button>
+        <button class="mt-c" data-v="x">×</button>
+      </div>
+      <div class="mt-exp">× だ液は<span class="kw">37~40℃</span>くらいでもっともよく働き、70℃以上になるとはたらきを失います。</div>
+    </div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問3</span>ヨウ素液を加えたときに青紫色に変化するのは、何が存在する証拠か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:デンプン</button>
+        <button class="q4-c" data-v="b">イ:糖</button>
+        <button class="q4-c" data-v="c">ウ:タンパク質</button>
+        <button class="q4-c" data-v="d">エ:脂肪</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア:デンプン</strong>。ヨウ素液はデンプンの検出に使う薬品です。糖の検出にはベネジクト液を使います。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;">
+      <button class="mt-block-reset">↻ もう一度</button>
+    </div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-u2" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('u2')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!--  単元3:小腸のつくりと養分の吸収                        -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">3</span>小腸のつくりと養分の吸収</div>
+
+  <!-- ▼ 説明を読む(チャレンジ機能を統合) -->
+  <div class="stage challenge" data-ch-id="u3" data-target="#u3-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <button class="audio-btn" onclick="playAudio('u3_intro')">
+          <span class="ico">▶</span> 音声で聞く
+        </button>
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="u3-readbox">
+      <p>デンプン(炭水化物)、タンパク質、脂肪は、消化管を通る間に消化液によって細かく分解され、最終的に<span class="kw-blank" data-a="小腸">小腸</span>で吸収されます。</p>
+
+      <div class="fig-with-table">
+        <div class="figure">
+          <svg width="220" height="190" viewBox="0 0 220 190" role="img" aria-label="小腸の柔毛の断面図">
+            <rect x="10" y="10" width="200" height="60" rx="8" fill="#FFCCBC"/>
+            <text x="110" y="45" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5D4037" font-weight="bold">小腸のかべ</text>
+            <g>
+              <path d="M20,70 Q30,140 20,170 L40,170 Q50,140 40,70 Z" fill="#FF8A65"/>
+              <path d="M55,70 Q65,150 55,175 L80,175 Q90,150 80,70 Z" fill="#FF8A65"/>
+              <path d="M95,70 Q105,140 95,170 L120,170 Q130,140 120,70 Z" fill="#FF8A65"/>
+              <path d="M135,70 Q145,150 135,175 L160,175 Q170,150 160,70 Z" fill="#FF8A65"/>
+              <path d="M175,70 Q185,140 175,170 L195,170 Q205,140 195,70 Z" fill="#FF8A65"/>
+            </g>
+            <line x1="30" y1="90" x2="30" y2="150" stroke="#D32F2F" stroke-width="3"/>
+            <line x1="67" y1="95" x2="67" y2="155" stroke="#D32F2F" stroke-width="3"/>
+            <line x1="107" y1="90" x2="107" y2="150" stroke="#D32F2F" stroke-width="3"/>
+            <line x1="147" y1="95" x2="147" y2="155" stroke="#D32F2F" stroke-width="3"/>
+            <line x1="185" y1="90" x2="185" y2="150" stroke="#D32F2F" stroke-width="3"/>
+          </svg>
+          <div class="caption">▲ 柔毛(赤い線は毛細血管のイメージ)</div>
+        </div>
+        <div class="fig-side">
+          <div class="fig-side-title">📋 柔毛のポイント</div>
+          <dl>
+            <dt>形</dt>
+            <dd>小腸の内側のかべにある、小さな突起</dd>
+            <dt>役割</dt>
+            <dd>吸収するための<span class="term">表面積</span>を大きくする</dd>
+          </dl>
+        </div>
+      </div>
+
+      <p>小腸の内側のかべには、<span class="kw-blank" data-a="柔毛">柔毛</span>という小さな突起がたくさんあります。柔毛があることで、栄養分を吸収するための<span class="kw-blank" data-a="表面積">表面積</span>が非常に大きくなり、効率よく養分を吸収できます。</p>
+
+      <p>デンプンは最終的に<span class="kw-blank" data-a="ブドウ糖">ブドウ糖</span>に、タンパク質は<span class="kw-blank" data-a="アミノ酸">アミノ酸</span>に、脂肪は<span class="kw-blank" data-a="脂肪酸">脂肪酸</span>と<span class="kw-blank" data-a="モノグリセリド">モノグリセリド</span>(グリセリン)に分解されて、柔毛から吸収されます。</p>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>〔暗記〕</th><th>デンプン</th><th>タンパク質</th><th>脂肪</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>だ液</th><td>○</td><td></td><td></td></tr>
+          <tr><th>胃液</th><td></td><td>○</td><td></td></tr>
+          <tr><th>胆汁</th><td></td><td></td><td>○(酵素なし・乳化)</td></tr>
+          <tr><th>すい液</th><td>○</td><td>○</td><td>○</td></tr>
+          <tr><th>腸液</th><td>○</td><td>○</td><td></td></tr>
+        </tbody>
+      </table>
+      <p><small>※ たての合計は「デンプン3・タンパク質3・脂肪2」→「1,2,3・1,2,3・1,2」と覚えましょう。</small></p>
+
+      <p>注意しよう!<span class="kw">すい液</span>は、デンプン・タンパク質・脂肪の3つすべてに働くことができる、とても優秀な消化液です。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>柔毛 …… 小腸の内側にある小さな突起。吸収の表面積を大きくする</li>
+        <li>デンプン → ブドウ糖 / タンパク質 → アミノ酸 / 脂肪 → 脂肪酸+モノグリセリド</li>
+        <li>すい液は デンプン・タンパク質・脂肪 の3つすべてに働く</li>
+        <li>覚え方「1,2,3・1,2,3・1,2」(デンプン3種・タンパク質3種・脂肪2種の消化液が働く)</li>
+      </ul>
+    </div>
+
+    <!-- 語群(チャレンジ開始時のみ表示) -->
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <!-- ▼ ミニテスト -->
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全3問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>小腸の柔毛は、栄養分を吸収する表面積を大きくする役割がある。</div>
+      <div class="mt-choices">
+        <button class="mt-c" data-v="o">○</button>
+        <button class="mt-c" data-v="x">×</button>
+      </div>
+      <div class="mt-exp">○ 正解です。柔毛が無数にあることで、限られた小腸の中でも吸収の効率が上がります。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>脂肪は消化されると、最終的にブドウ糖に変わる。</div>
+      <div class="mt-choices">
+        <button class="mt-c" data-v="o">○</button>
+        <button class="mt-c" data-v="x">×</button>
+      </div>
+      <div class="mt-exp">× 脂肪は<span class="kw">脂肪酸とモノグリセリド</span>に分解されます。ブドウ糖になるのはデンプンです。</div>
+    </div>
+
+    <div class="q4" data-correct="d">
+      <div class="q4-stem"><span class="q4-num">問3</span>デンプン・タンパク質・脂肪の3つすべてに働くことができる消化液はどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:だ液</button>
+        <button class="q4-c" data-v="b">イ:胃液</button>
+        <button class="q4-c" data-v="c">ウ:胆汁</button>
+        <button class="q4-c" data-v="d">エ:すい液</button>
+      </div>
+      <div class="q4-exp">正解は<strong>エ:すい液</strong>。すい液はデンプン・タンパク質・脂肪のすべてを分解できる、とても優秀な消化液です。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;">
+      <button class="mt-block-reset">↻ もう一度</button>
+    </div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-u3" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('u3')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  すべての単元を終えたら…                            -->
+<!-- ================================================== -->
+<div class="next-actions">
+  <h3>🎉 すべての単元、おつかれさま!</h3>
+  <p>次は問題に挑戦しよう!順番にチャレンジするのがおすすめです。</p>
+  <div class="links">
+    <a href="jintai_ch01_practice.html">📝 練習問題へ</a>
+    <a href="jintai_ch01_check.html">📋 確認問題へ</a>
+    <a href="jintai_ch01_test.html">🏆 単元末テストへ</a>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html">
+    <span class="label">◀ 単元表</span>
+    <span class="title">全単元一覧へ</span>
+  </a>
+  <a href="jintai_ch02.html" class="next">
+    <span class="label">NEXT ▶</span>
+    <span class="title">第2講 呼吸と肺のつくり</span>
+  </a>
+</nav>
+
+</main>
+</div>
+
+<!-- 共通モーダル類 -->
+<div class="example-modal" id="example-modal">
+  <div class="example-content" id="example-content"></div>
+</div>
+
+<div class="pass-overlay" id="pass-overlay">
+  <div class="pass-dialog">
+    <div class="pass-emoji">🎉</div>
+    <h2>合 格!</h2>
+    <p>すべて正解!よくできました!</p>
+    <div class="pass-time" id="pass-time-display">0:00.0</div>
+    <p style="font-size:13px;color:#666;margin-top:6px;">ランキングに記録されました</p>
+    <div class="pass-actions">
+      <button class="btn outline" onclick="document.getElementById('pass-overlay').classList.remove('show')">閉じる</button>
+    </div>
+  </div>
+</div>
+
+<div class="fail-toast" id="fail-toast"></div>
+<div class="confetti" id="confetti"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
