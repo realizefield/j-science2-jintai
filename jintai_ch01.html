@@ -101,24 +101,22 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
   </div>
   <div class="unit-body">
     <div class="exp-img"><img src="shoukakan1.png" alt="ヒトの消化器官" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
-    <div class="exp-text"><p>私たちが食べた食物には、体を動かすための栄養分がふくまれています。しかし、そのままでは分子が大きすぎて、体の中に吸収することができません。そこで、食物を細かく分解し、体に吸収しやすい小さな物質に変えるはたらきを「<b>消化</b>」といいます。</p>
-<p>消化を行う器官を「<b>消化器官</b>」といい、口・食道・胃・小腸・大腸などがあります。これらの器官が一本の長い管のようにつながったものを「<b>消化管</b>」といい、口→食道→胃→小腸→大腸→肛門の順につながっています。</p>
-<p>消化液せんでつくられ、消化管に分泌される液を「<b>消化液</b>」といいます。だ液・胃液・胆汁・すい液・腸液などがあります。</p>
-<p>消化液の中で、栄養分を分解するはたらきをもつ物質を「<b>消化酵素</b>」といいます。だ液にふくまれる<b>アミラーゼ</b>や、胃液にふくまれる<b>ペプシン</b>などが消化酵素です。消化酵素は決まった物質にだけ働き、はたらいたあとも自分自身は変化しないという特ちょうがあります。</p>
-<div class="warn-box"><b>⚠️ 注意しよう！</b><br>
-消化液の中でも、肝臓でつくられる「<b>胆汁</b>」には<b>消化酵素がふくまれていません</b>。胆汁は脂肪を細かい粒にして、消化酵素が働きやすくする役割をもっています。</div>
-<div class="pt-box"><b>★ 覚えよう！</b><br>
-消化管 …… 口→食道→胃→小腸→大腸→肛門とつながる1本の管<br>
-消化液 …… だ液・胃液・胆汁・すい液・腸液など<br>
-消化酵素 …… だ液のアミラーゼ、胃液のペプシンなど。特定の物質だけを分解する</div>
+    <div class="exp-text"><p>食べたものを、体に吸収しやすい小さな物質に変えるはたらきを<b>消化</b>といいます。</p>
+<p>消化を行う口・食道・胃・小腸・大腸などを<b>消化器官</b>、これらがひとつながりになった管を<b>消化管</b>といいます。</p>
+<p>消化管に出される液を<b>消化液</b>、その中で栄養分を分解する物質を<b>消化酵素</b>といいます。だ液の<b>アミラーゼ</b>や胃液の<b>ペプシン</b>が代表的な消化酵素です。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・消化…食物を体に吸収しやすい小さな物質に変えるはたらき<br>
+・消化管…口→食道→胃→小腸→大腸→肛門とつながる1本の管<br>
+・消化酵素…だ液のアミラーゼ、胃液のペプシンなど<br>
+・胆汁には消化酵素がふくまれていません（脂肪を細かくするだけ）</div>
 </div>
     <div class="kw-list"></div>
     <button class="mini-btn" onclick="toggleMini('mt1')">
       🧪 ミニテストに挑戦！
-      <span id="mini-badge-mt1" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+      <span id="mini-badge-mt1" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 6</span>
     </button>
     <div class="mini-section" id="mini_mt1">
-      <div class="mini-score-row" id="pips_mt1"><div class="mini-score-pip" id="pip_mt1_1"></div><div class="mini-score-pip" id="pip_mt1_2"></div><div class="mini-score-pip" id="pip_mt1_3"></div><div class="mini-score-pip" id="pip_mt1_4"></div><div class="mini-score-pip" id="pip_mt1_5"></div></div>
+      <div class="mini-score-row" id="pips_mt1"><div class="mini-score-pip" id="pip_mt1_1"></div><div class="mini-score-pip" id="pip_mt1_2"></div><div class="mini-score-pip" id="pip_mt1_3"></div><div class="mini-score-pip" id="pip_mt1_4"></div><div class="mini-score-pip" id="pip_mt1_5"></div><div class="mini-score-pip" id="pip_mt1_6"></div></div>
       <div class="q-block" id="qblock_mt1_q1">
   <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
   <p style="font-size:.88rem;color:#555;margin-bottom:6px;">食物を体に吸収しやすい小さな物質に変えるはたらきを①という。①を行う器官を②といい、これらがひとつながりになった管を③という。①を行うために分泌される液を④、④の中で栄養分を分解するはたらきをもつ物質を⑤という。</p>
@@ -181,6 +179,31 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
   <div class="fb-msg" id="fb_mt1_q5"></div>
   <div class="msample" id="samp_mt1_q5">正解: イ：胃液　胃液にふくまれるペプシンは、タンパク質を分解します。</div>
 </div>
+<div class="q-block" id="qblock_mt1_q6">
+  <h4>Q6. 消化器官の図の①〜⑫に当てはまる語句を語群から選んで入れよう。</h4>
+  <div class="exp-img"><img src="shoukakan2.png" alt="ヒトの消化器官（番号あて）" style="max-width:100%;border-radius:10px;margin:6px auto 10px;display:block;"></div>
+  <div class="mchips" id="chips_mt1_q6"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt1_q6_0" onclick="returnChip('mt1',6,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt1_q6_1" onclick="returnChip('mt1',6,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt1_q6_2" onclick="returnChip('mt1',6,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt1_q6_3" onclick="returnChip('mt1',6,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt1_q6_4" onclick="returnChip('mt1',6,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt1_q6_5" onclick="returnChip('mt1',6,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt1_q6_6" onclick="returnChip('mt1',6,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt1_q6_7" onclick="returnChip('mt1',6,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt1_q6_8" onclick="returnChip('mt1',6,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt1_q6_9" onclick="returnChip('mt1',6,9)">&nbsp;</span>
+    <span class="mdz-label">⑪</span><span class="mdz" id="mdz_mt1_q6_10" onclick="returnChip('mt1',6,10)">&nbsp;</span>
+    <span class="mdz-label">⑫</span><span class="mdz" id="mdz_mt1_q6_11" onclick="returnChip('mt1',6,11)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt1',6)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt1',6)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q6"></div>
+  <div class="msample" id="samp_mt1_q6">答え: ①=口 / ②=だ液せん / ③=食道 / ④=胃 / ⑤=すい臓 / ⑥=大腸 / ⑦=水分 / ⑧=小腸 / ⑨=直腸 / ⑩=胆汁 / ⑪=胆のう / ⑫=肝臓</div>
+</div>
       <div class="pass-banner" id="pass_mt1">🎉 この単元クリア！すばらしい！ 🎉</div>
     </div>
   </div>
@@ -193,23 +216,24 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
   </div>
   <div class="unit-body">
     <div class="exp-img"><img src="daeki1.png" alt="だ液のはたらきを調べる実験" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
-    <div class="exp-text"><p>だ液には消化酵素の<b>アミラーゼ</b>がふくまれています。アミラーゼは、デンプンを<b>糖</b>に分解するはたらきをもっています。</p>
-<p>だ液は、体温に近い<b>37～40℃</b>くらいのときにもっともよく働きます。反対に、70℃以上の高温になると、アミラーゼの成分であるタンパク質のつくりがこわれてしまい、はたらきません。（いちど高温でこわれたタンパク質は、温度を下げてもはたらきが戻りません）</p>
+    <div class="exp-text"><p>だ液には<b>アミラーゼ</b>という消化酵素があり、デンプンを<b>糖</b>に分解します。</p>
+<p>だ液は体温に近い<b>37～40℃</b>でよく働き、70℃以上になるとはたらきを失います。</p>
 <h3>デンプンと糖を見分ける方法</h3>
 <table class="exp-tbl">
 <thead><tr><th>薬品</th><th>使い方</th><th>結果</th></tr></thead>
 <tbody>
-<tr><td class="nc">ヨウ素液</td><td>液体に加えるだけ</td><td>デンプンがあると<b>青紫色</b>に変化する</td></tr>
-<tr><td class="nc">ベネジクト液</td><td>液体に加えて加熱する</td><td>糖があると<b>赤褐色の沈殿</b>ができる</td></tr>
+<tr><td class="nc">ヨウ素液</td><td>加えるだけ</td><td>デンプンがあると<b>青紫色</b></td></tr>
+<tr><td class="nc">ベネジクト液</td><td>加えて加熱</td><td>糖があると<b>赤褐色の沈殿</b></td></tr>
 </tbody>
 </table>
-<div class="memo-box">ベネジクト液を加熱するときは、液が急に沸騰して飛び散る「<b>突沸</b>」を防ぐため、必ず<b>沸とう石</b>を入れてから加熱します。</div>
-<p>【実験】試験管Aにはデンプン溶液のみ、試験管Bにはデンプン溶液とだ液を入れ、約40℃のお湯で十分に温めました。</p>
-<p>Bではだ液の中のアミラーゼが働くため、Bのデンプンはほとんど分解されて糖に変わっています。一方、だ液を加えていないAは、消化酵素が働かないため、デンプンのままです。</p>
-<div class="pt-box"><b>★ 覚えよう！</b><br>
-アミラーゼ …… だ液にふくまれる消化酵素。デンプンを糖に分解する<br>
-だ液は37～40℃でよく働き、70℃以上ではたらきません<br>
-デンプンの検出→ヨウ素液（青紫色）／糖の検出→ベネジクト液＋加熱（赤褐色の沈殿）</div>
+<p>加熱するときは、<b>突沸</b>を防ぐため<b>沸とう石</b>を入れます。</p>
+<p>デンプン溶液だけのA、デンプン溶液とだ液のBを40℃で温めると、Bだけデンプンが糖に変わります。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・アミラーゼ…だ液の消化酵素。デンプンを糖に分解する<br>
+・だ液がよく働く温度…37～40℃<br>
+・デンプンの検出…ヨウ素液（青紫色）<br>
+・糖の検出…ベネジクト液＋加熱（赤褐色の沈殿）<br>
+・加熱時は沸とう石で突沸を防ぐ</div>
 </div>
     <div class="kw-list"></div>
     <button class="mini-btn" onclick="toggleMini('mt2')">
@@ -292,23 +316,20 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
   </div>
   <div class="unit-body">
     <div class="exp-img"><img src="daekitoi2.png" alt="セロハンの袋を使った実験" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
-    <div class="exp-text"><p>前の単元の実験で、試験管Bのデンプンはだ液（アミラーゼ）によって糖に変わることがわかりました。では、デンプンの粒（分子）と、糖の粒（分子）は、どちらが大きいのでしょうか？それを確かめる、おもしろい実験を見てみましょう。</p>
-<p>「セロハン」という薄い膜には、目に見えないとても小さな穴がたくさんあいています。この穴には、<b>小さな</b>粒（分子）だけを通し、<b>大きな</b>粒（分子）は通さないという性質があります。</p>
-<p>試験管Aの中身（デンプンのまま）と、試験管Bの中身（だ液によって糖に変わったもの）を、それぞれセロハンの袋に入れて、ビーカーの水にしばらくつけておきます。そのあと、<b>ビーカー側の水</b>を取り出して調べます。</p>
+    <div class="exp-text"><p>セロハンの膜には小さな穴があり、<b>小さな粒</b>だけを通し、<b>大きな粒</b>は通しません。</p>
+<p>試験管Aの液（デンプンのまま）とBの液（だ液で糖に変化）をセロハンの袋に入れ、水にしばらくつけたあと、外側の水を調べます。</p>
 <table class="exp-tbl">
-<thead><tr><th>ビーカーの水</th><th>ヨウ素液を加える</th><th>ベネジクト液を加えて加熱</th></tr></thead>
+<thead><tr><th>ビーカーの水</th><th>ヨウ素液</th><th>ベネジクト液＋加熱</th></tr></thead>
 <tbody>
-<tr><td class="nc">Aの袋を入れたほう</td><td>変化なし</td><td>変化なし</td></tr>
-<tr><td class="nc">Bの袋を入れたほう</td><td>変化なし</td><td>赤褐色の沈殿ができる</td></tr>
+<tr><td class="nc">Aの袋のほう</td><td>変化なし</td><td>変化なし</td></tr>
+<tr><td class="nc">Bの袋のほう</td><td>変化なし</td><td>赤褐色の沈殿</td></tr>
 </tbody>
 </table>
-<p>Aの袋を入れたビーカーの水は、ヨウ素液・ベネジクト液のどちらを加えても変化がありませんでした。これは、<b>デンプン</b>の粒が大きすぎて、セロハンの穴を通れず、ビーカーの水の中に出てこられなかったからです。</p>
-<p>一方、Bの袋を入れたビーカーの水は、ベネジクト液を加えて加熱すると<b>赤褐色</b>の沈殿ができました。これは、だ液によって分解された<b>糖</b>の粒が小さいため、セロハンの穴を通り抜けて、ビーカーの水の中に出てきたからです。</p>
-<div class="pt-box"><b>★ 覚えよう！</b><br>
-セロハンの膜には小さな穴があり、小さな粒（分子）だけを通す<br>
-デンプンの粒は大きい → セロハンを通れない<br>
-糖（消化された物質）の粒は小さい → セロハンを通れる<br>
-消化とは、大きな粒を小さな粒に変えて、吸収できるようにするはたらき</div>
+<p>Aの水は変化しません。デンプンの粒が大きく、セロハンを通れないためです。Bの水は<b>赤褐色</b>の沈殿ができます。糖の粒が小さく、セロハンを通り抜けたためです。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・セロハンの穴…小さな粒だけを通す<br>
+・デンプン（大きい）→通れない／糖（小さい）→通れる<br>
+・消化…大きな粒を小さな粒に変えて、吸収できるようにするはたらき</div>
 </div>
     <div class="kw-list"></div>
     <button class="mini-btn" onclick="toggleMini('mt3')">
@@ -390,10 +411,11 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
     <h2>小腸のつくりと養分の吸収</h2>
   </div>
   <div class="unit-body">
-    <div class="exp-text"><p>デンプン（炭水化物）、タンパク質、脂肪は、消化管を通る間に消化液によって細かく分解され、最終的に<b>小腸</b>で吸収されます。</p>
-<p>小腸の内側のかべには、<b>柔毛</b>という小さな突起がたくさんあります。柔毛があることで、栄養分を吸収するための<b>表面積</b>が非常に大きくなり、効率よく養分を吸収できます。</p>
-<p>デンプンは最終的に<b>ブドウ糖</b>に、タンパク質は<b>アミノ酸</b>に、脂肪は<b>脂肪酸</b>と<b>モノグリセリド</b>（グリセリン）に分解されて、柔毛から吸収されます。</p>
-<h3>消化液のはたらき（暗記）</h3>
+    <div class="exp-img"><img src="shouchou1.png" alt="小腸のつくり（柔毛・毛細血管・リンパ管）" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>デンプン・タンパク質・脂肪は消化液によって分解され、<b>小腸</b>で吸収されます。</p>
+<p>小腸の内側には図のような<b>柔毛</b>という小さな突起が多数あり、吸収の<b>表面積</b>を大きくしています。</p>
+<p>デンプンは<b>ブドウ糖</b>、タンパク質は<b>アミノ酸</b>、脂肪は<b>脂肪酸</b>と<b>モノグリセリド</b>に分解されます。ブドウ糖とアミノ酸は柔毛の中の<b>毛細血管</b>に、脂肪酸とモノグリセリドは<b>リンパ管</b>に吸収されます。</p>
+<h3>消化液のはたらき</h3>
 <table class="exp-tbl">
 <thead><tr><th>〔暗記〕</th><th>デンプン</th><th>タンパク質</th><th>脂肪</th></tr></thead>
 <tbody>
@@ -404,21 +426,22 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
 <tr><td class="nc">腸液</td><td>○</td><td>○</td><td></td></tr>
 </tbody>
 </table>
-<div class="memo-box">たての合計は「デンプン3・タンパク質3・脂肪2」→「1,2,3・1,2,3・1,2」と覚えましょう。</div>
-<div class="warn-box"><b>⚠️ 注意しよう！</b><br>
-<b>すい液</b>は、デンプン・タンパク質・脂肪の3つすべてに働くことができる、とても優秀な消化液です。</div>
-<div class="pt-box"><b>★ 覚えよう！</b><br>
-柔毛 …… 小腸の内側にある小さな突起。吸収の表面積を大きくする<br>
-デンプン→ブドウ糖／タンパク質→アミノ酸／脂肪→脂肪酸＋モノグリセリド<br>
-すい液は デンプン・タンパク質・脂肪 の3つすべてに働く</div>
+<div class="exp-img"><img src="shouchou7.png" alt="消化液によるデンプン・タンパク質・脂肪の分解（1,2,3の覚え方）" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+<div class="pt-box"><b>【重要】</b><br>
+・柔毛…小腸の突起。吸収の表面積を大きくする<br>
+・デンプン→ブドウ糖／タンパク質→アミノ酸／脂肪→脂肪酸＋モノグリセリド<br>
+・ブドウ糖・アミノ酸→毛細血管／脂肪酸・モノグリセリド→リンパ管<br>
+・すい液はデンプン・タンパク質・脂肪の3つすべてに働く<br>
+・胆汁には消化酵素がない（脂肪を細かくするだけ）<br>
+・覚え方「1,2,3・1,2,3・1,2」</div>
 </div>
     <div class="kw-list"></div>
     <button class="mini-btn" onclick="toggleMini('mt4')">
       🧪 ミニテストに挑戦！
-      <span id="mini-badge-mt4" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+      <span id="mini-badge-mt4" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 7</span>
     </button>
     <div class="mini-section" id="mini_mt4">
-      <div class="mini-score-row" id="pips_mt4"><div class="mini-score-pip" id="pip_mt4_1"></div><div class="mini-score-pip" id="pip_mt4_2"></div><div class="mini-score-pip" id="pip_mt4_3"></div><div class="mini-score-pip" id="pip_mt4_4"></div><div class="mini-score-pip" id="pip_mt4_5"></div></div>
+      <div class="mini-score-row" id="pips_mt4"><div class="mini-score-pip" id="pip_mt4_1"></div><div class="mini-score-pip" id="pip_mt4_2"></div><div class="mini-score-pip" id="pip_mt4_3"></div><div class="mini-score-pip" id="pip_mt4_4"></div><div class="mini-score-pip" id="pip_mt4_5"></div><div class="mini-score-pip" id="pip_mt4_6"></div><div class="mini-score-pip" id="pip_mt4_7"></div></div>
       <div class="q-block" id="qblock_mt4_q1">
   <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
   <p style="font-size:.88rem;color:#555;margin-bottom:6px;">小腸の内側には①という突起があり、吸収の②を大きくしている。デンプンは③に、タンパク質は④に、脂肪は⑤とモノグリセリドに分解されて吸収される。</p>
@@ -480,6 +503,47 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
   </div>
   <div class="fb-msg" id="fb_mt4_q5"></div>
   <div class="msample" id="samp_mt4_q5">正解: イ：脂肪酸とモノグリセリド　脂肪は脂肪酸とモノグリセリド（グリセリン）に分解されます。</div>
+</div>
+<div class="q-block" id="qblock_mt4_q6">
+  <h4>Q6. 小腸のつくりの図の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <div class="exp-img"><img src="shouchou2.png" alt="小腸のつくり（番号あて）" style="max-width:100%;border-radius:10px;margin:6px auto 10px;display:block;"></div>
+  <div class="mchips" id="chips_mt4_q6"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt4_q6_0" onclick="returnChip('mt4',6,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt4_q6_1" onclick="returnChip('mt4',6,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt4_q6_2" onclick="returnChip('mt4',6,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt4_q6_3" onclick="returnChip('mt4',6,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt4_q6_4" onclick="returnChip('mt4',6,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt4',6)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt4',6)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q6"></div>
+  <div class="msample" id="samp_mt4_q6">答え: ①=柔毛 / ②=毛細血管 / ③=リンパ管 / ④=柔毛 / ⑤=表面積</div>
+</div>
+<div class="q-block" id="qblock_mt4_q7">
+  <h4>Q7. 消化液のはたらきの図の①〜⑩に当てはまる語句を語群から選んで入れよう。</h4>
+  <div class="exp-img"><img src="shouchou6.png" alt="消化液によるデンプン・タンパク質・脂肪の分解（番号あて）" style="max-width:100%;border-radius:10px;margin:6px auto 10px;display:block;"></div>
+  <div class="mchips" id="chips_mt4_q7"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt4_q7_0" onclick="returnChip('mt4',7,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt4_q7_1" onclick="returnChip('mt4',7,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt4_q7_2" onclick="returnChip('mt4',7,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt4_q7_3" onclick="returnChip('mt4',7,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt4_q7_4" onclick="returnChip('mt4',7,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt4_q7_5" onclick="returnChip('mt4',7,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt4_q7_6" onclick="returnChip('mt4',7,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt4_q7_7" onclick="returnChip('mt4',7,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt4_q7_8" onclick="returnChip('mt4',7,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt4_q7_9" onclick="returnChip('mt4',7,9)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt4',7)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt4',7)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q7"></div>
+  <div class="msample" id="samp_mt4_q7">答え: ①=デンプン / ②=たんぱく質 / ③=脂肪 / ④=アミラーゼ / ⑤=ペプシン / ⑥=ブドウ糖 / ⑦=アミノ酸 / ⑧=脂肪酸 / ⑨=モノグリセリド / ⑩=消化酵素</div>
 </div>
       <div class="pass-banner" id="pass_mt4">🎉 この単元クリア！すばらしい！ 🎉</div>
     </div>
@@ -661,6 +725,99 @@ canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100
   </div>
 </div>
 
+<div class="unit-card" id="card_mt7">
+  <div class="unit-header">
+    <div class="unit-num">7</div>
+    <h2>発展：吸収された養分のゆくえ（肝門脈・リンパ管）</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="shouchou3.png" alt="吸収された養分が全身に運ばれるまで" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>毛細血管に吸収された<b>ブドウ糖とアミノ酸</b>は、「<b>肝門脈</b>」という血管を通って<b>肝臓</b>にたくわえられます。</p>
+<p>リンパ管に吸収された<b>脂肪酸とモノグリセリド</b>は、「<b>胸管</b>」という管を通って大静脈に入り、<b>心臓</b>から全身に配られます。</p>
+<p>門脈とは、内臓から出た血液が心臓に戻る前に別の器官を通る血管のことです。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・ブドウ糖・アミノ酸…毛細血管→肝門脈→肝臓<br>
+・脂肪酸・モノグリセリド…リンパ管→胸管→大静脈→心臓→全身<br>
+・肝門脈…消化管からの血液が心臓に戻る前に肝臓を通る血管</div>
+</div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt7')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt7" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 4</span>
+    </button>
+    <div class="mini-section" id="mini_mt7">
+      <div class="mini-score-row" id="pips_mt7"><div class="mini-score-pip" id="pip_mt7_1"></div><div class="mini-score-pip" id="pip_mt7_2"></div><div class="mini-score-pip" id="pip_mt7_3"></div><div class="mini-score-pip" id="pip_mt7_4"></div></div>
+
+<div class="q-block" id="qblock_mt7_q1">
+  <h4>Q1. 図の①〜⑮に当てはまる語句を語群から選んで入れよう。</h4>
+  <div class="exp-img"><img src="shouchou4.png" alt="吸収された養分が全身に運ばれるまで（番号あて）" style="max-width:100%;border-radius:10px;margin:6px auto 10px;display:block;"></div>
+  <div class="mchips" id="chips_mt7_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt7_q1_0" onclick="returnChip('mt7',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt7_q1_1" onclick="returnChip('mt7',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt7_q1_2" onclick="returnChip('mt7',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt7_q1_3" onclick="returnChip('mt7',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt7_q1_4" onclick="returnChip('mt7',1,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt7_q1_5" onclick="returnChip('mt7',1,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt7_q1_6" onclick="returnChip('mt7',1,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt7_q1_7" onclick="returnChip('mt7',1,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt7_q1_8" onclick="returnChip('mt7',1,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt7_q1_9" onclick="returnChip('mt7',1,9)">&nbsp;</span>
+    <span class="mdz-label">⑪</span><span class="mdz" id="mdz_mt7_q1_10" onclick="returnChip('mt7',1,10)">&nbsp;</span>
+    <span class="mdz-label">⑫</span><span class="mdz" id="mdz_mt7_q1_11" onclick="returnChip('mt7',1,11)">&nbsp;</span>
+    <span class="mdz-label">⑬</span><span class="mdz" id="mdz_mt7_q1_12" onclick="returnChip('mt7',1,12)">&nbsp;</span>
+    <span class="mdz-label">⑭</span><span class="mdz" id="mdz_mt7_q1_13" onclick="returnChip('mt7',1,13)">&nbsp;</span>
+    <span class="mdz-label">⑮</span><span class="mdz" id="mdz_mt7_q1_14" onclick="returnChip('mt7',1,14)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt7',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt7',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q1"></div>
+  <div class="msample" id="samp_mt7_q1">答え: ①=ブドウ糖 / ②=アミノ酸 / ③=脂肪酸 / ④=モノグリセリド / ⑤=毛細血管 / ⑥=ブドウ糖 / ⑦=アミノ酸 / ⑧=肝門脈 / ⑨=肝臓 / ⑩=リンパ管 / ⑪=肝門脈 / ⑫=リンパ管 / ⑬=脂肪酸 / ⑭=モノグリセリド / ⑮=リンパ管</div>
+</div>
+
+<div class="q-block" id="qblock_mt7_q2">
+  <h4>Q2. ブドウ糖とアミノ酸は、毛細血管から何を通って肝臓に運ばれるか。</h4>
+  <div class="choice-list" id="choices_mt7_q2">
+    <button class="choice-btn" onclick="pick4('mt7',2,0,1,'mt7_q2')">ア：リンパ管</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,1,1,'mt7_q2')">イ：肝門脈</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,2,1,'mt7_q2')">ウ：胸管</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,3,1,'mt7_q2')">エ：大静脈</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q2"></div>
+  <div class="msample" id="samp_mt7_q2">正解: イ：肝門脈　ブドウ糖とアミノ酸は毛細血管から肝門脈を通り、肝臓にたくわえられます。</div>
+</div>
+
+<div class="q-block" id="qblock_mt7_q3">
+  <h4>Q3. 脂肪酸とモノグリセリドは、リンパ管からどこを通って心臓に運ばれるか。</h4>
+  <div class="choice-list" id="choices_mt7_q3">
+    <button class="choice-btn" onclick="pick4('mt7',3,0,1,'mt7_q3')">ア：肝門脈</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,1,1,'mt7_q3')">イ：胸管から大静脈</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,2,1,'mt7_q3')">ウ：動脈</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,3,1,'mt7_q3')">エ：小腸から直接吸収</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q3"></div>
+  <div class="msample" id="samp_mt7_q3">正解: イ：胸管から大静脈　リンパ管は胸管という太い管に集まり、大静脈に入って心臓に運ばれます。</div>
+</div>
+
+<div class="q-block" id="qblock_mt7_q4">
+  <h4>Q4. 肝門脈とはどのような血管か。</h4>
+  <div class="choice-list" id="choices_mt7_q4">
+    <button class="choice-btn" onclick="pick4('mt7',4,0,2,'mt7_q4')">ア：心臓から肺に向かう血管</button>
+    <button class="choice-btn" onclick="pick4('mt7',4,1,2,'mt7_q4')">イ：全身から心臓に直接戻る血管</button>
+    <button class="choice-btn" onclick="pick4('mt7',4,2,2,'mt7_q4')">ウ：消化管から出た血液が心臓に戻る前に肝臓を通る血管</button>
+    <button class="choice-btn" onclick="pick4('mt7',4,3,2,'mt7_q4')">エ：じん臓から尿を運ぶ管</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q4"></div>
+  <div class="msample" id="samp_mt7_q4">正解: ウ：消化管から出た血液が心臓に戻る前に肝臓を通る血管　このように別の器官を通る血管を「門脈」といいます。</div>
+</div>
+
+      <div class="pass-banner" id="pass_mt7">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+
 </div><!-- /units -->
 
 <script>
@@ -672,12 +829,13 @@ const miniScore = {};
 const miniTotal = {};
 const miniDone = {};
 
-miniScore['mt1'] = 0; miniTotal['mt1'] = 5; miniDone['mt1'] = [false, false, false, false, false];
+miniScore['mt1'] = 0; miniTotal['mt1'] = 6; miniDone['mt1'] = [false, false, false, false, false, false];
 miniScore['mt2'] = 0; miniTotal['mt2'] = 5; miniDone['mt2'] = [false, false, false, false, false];
 miniScore['mt3'] = 0; miniTotal['mt3'] = 5; miniDone['mt3'] = [false, false, false, false, false];
 miniScore['mt4'] = 0; miniTotal['mt4'] = 5; miniDone['mt4'] = [false, false, false, false, false];
 miniScore['mt5'] = 0; miniTotal['mt5'] = 8; miniDone['mt5'] = [false, false, false, false, false, false, false, false];
 miniScore['mt6'] = 0; miniTotal['mt6'] = 3; miniDone['mt6'] = [false, false, false];
+miniScore['mt7'] = 0; miniTotal['mt7'] = 4; miniDone['mt7'] = [false, false, false, false];
 
 
 // ============================================================
@@ -935,9 +1093,13 @@ function fireConfetti() {
 // ============================================================
 
 initMiniBank('mt1',1,["消化", "消化器官", "消化管", "消化液", "消化酵素"],["消化", "消化器官", "消化管", "消化液", "消化酵素"],[]);
+initMiniBank('mt1',6,["口", "だ液せん", "食道", "胃", "すい臓", "大腸", "水分", "小腸", "直腸", "胆汁", "胆のう", "肝臓"],["口", "だ液せん", "食道", "胃", "すい臓", "大腸", "水分", "小腸", "直腸", "胆汁", "胆のう", "肝臓"],[]);
 initMiniBank('mt2',1,["アミラーゼ", "糖", "ヨウ素液", "ベネジクト液", "沸とう石"],["アミラーゼ", "糖", "ヨウ素液", "ベネジクト液", "沸とう石"],[]);
 initMiniBank('mt3',1,["小さ", "大き", "デンプン", "糖", "赤褐色"],["小さ", "大き", "デンプン", "糖", "赤褐色"],[]);
 initMiniBank('mt4',1,["柔毛", "表面積", "ブドウ糖", "アミノ酸", "脂肪酸"],["柔毛", "表面積", "ブドウ糖", "アミノ酸", "脂肪酸"],[]);
+initMiniBank('mt4',6,["柔毛", "毛細血管", "リンパ管", "柔毛", "表面積"],["柔毛", "毛細血管", "リンパ管", "柔毛", "表面積"],[]);
+initMiniBank('mt4',7,["デンプン", "たんぱく質", "脂肪", "アミラーゼ", "ペプシン", "ブドウ糖", "アミノ酸", "脂肪酸", "モノグリセリド", "消化酵素"],["デンプン", "たんぱく質", "脂肪", "アミラーゼ", "ペプシン", "ブドウ糖", "アミノ酸", "脂肪酸", "モノグリセリド", "消化酵素"],[]);
+initMiniBank('mt7',1,["ブドウ糖", "アミノ酸", "脂肪酸", "モノグリセリド", "毛細血管", "ブドウ糖", "アミノ酸", "肝門脈", "肝臓", "リンパ管", "肝門脈", "リンパ管", "脂肪酸", "モノグリセリド", "リンパ管"],["ブドウ糖", "アミノ酸", "脂肪酸", "モノグリセリド", "毛細血管", "ブドウ糖", "アミノ酸", "肝門脈", "肝臓", "リンパ管", "肝門脈", "リンパ管", "脂肪酸", "モノグリセリド", "リンパ管"],[]);
 
 </script>
 
