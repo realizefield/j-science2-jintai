@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中学理科 人体のはたらき 目次</title>
+<style>
+:root{
+  --pri:#e11d48;--pri-d:#881337;--pri-l:#fecdd3;
+  --pink:#db2777;--pink-d:#9d174d;--pink-bg:#fce7f3;
+  --gray:#6b7280;--light:#f0fdf4;--card:#fff;
+  --radius:14px;--shadow:0 4px 18px rgba(0,0,0,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#fff1f2;font-family:'Helvetica Neue',Arial,'Hiragino Sans',sans-serif;color:#1e293b;}
+header{background:linear-gradient(135deg,var(--pri-d),var(--pri));color:#fff;text-align:center;padding:28px 20px 22px;}
+header h1{font-size:clamp(1.3rem,4vw,2rem);font-weight:900;letter-spacing:.04em;}
+header p{margin-top:6px;font-size:.93rem;opacity:.88;}
+.units{max-width:860px;margin:30px auto;padding:0 16px;}
+.unit-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:32px;overflow:hidden;}
+.unit-header{background:linear-gradient(90deg,var(--pri-d),var(--pri));color:#fff;padding:14px 22px;display:flex;align-items:center;gap:12px;}
+.unit-num{background:#fff;color:var(--pri-d);font-weight:900;font-size:1.1rem;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.unit-header h2{font-size:1.1rem;font-weight:800;}
+.unit-body{padding:22px;}
+.exp-img{margin:14px 0;}
+.exp-text{line-height:1.95;font-size:.97rem;margin:10px 0;}
+.exp-text p{margin-bottom:.85em;}
+.exp-text h3{font-size:.97rem;color:var(--pri-d);margin:1em 0 .5em;border-left:3px solid var(--pri);padding-left:8px;font-weight:800;}
+.pt-box{background:#dcfce7;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.warn-box{background:#fee2e2;border-left:4px solid #dc2626;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.memo-box{background:#fff1f2;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.88rem;line-height:1.8;}
+.amber-box{background:#fef3c7;border-left:4px solid #b45309;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.info-box{background:#f0fdff;border-left:4px solid #0e7490;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.eq-box{background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:14px;margin:10px 0;text-align:center;}
+.eq-box .eq{font-size:1rem;font-weight:800;color:var(--pri-d);letter-spacing:.03em;}
+.exp-tbl{width:100%;border-collapse:collapse;font-size:.85rem;margin:10px 0;}
+.exp-tbl th{background:var(--pri);color:#fff;padding:8px 10px;text-align:left;}
+.exp-tbl td{padding:8px 10px;border-bottom:1px solid #e5e7eb;vertical-align:top;line-height:1.65;}
+.exp-tbl tr:nth-child(even) td{background:#f9fafb;}
+.exp-tbl .nc{font-weight:700;white-space:nowrap;}
+.badge-p{background:#dcfce7;color:#14532d;border:1px solid #bbf7d0;font-size:.68rem;font-weight:700;padding:1px 7px;border-radius:10px;display:inline-block;margin-left:4px;}
+.kw-list{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px;}
+.kw{background:var(--pri-l);color:var(--pri-d);border-radius:20px;padding:4px 14px;font-size:.88rem;font-weight:700;}
+/* mini-test toggle */
+.mini-btn{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;background:var(--pink-bg);border:2.5px solid var(--pink);color:var(--pink-d);font-size:.97rem;font-weight:800;padding:10px 22px;border-radius:40px;margin:14px 0 0;transition:.2s;}
+.mini-btn:hover{background:var(--pink);color:#fff;}
+.mini-section{display:none;margin-top:16px;background:#fdf2f8;border:2px solid #f9a8d4;border-radius:12px;padding:18px;}
+.mini-section.open{display:block;}
+.q-block{margin-bottom:22px;}
+.q-block h4{font-size:.98rem;font-weight:800;color:var(--pri-d);margin-bottom:10px;}
+/* Word bank chips */
+.mchips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;}
+.mchip{background:#fff;border:2.5px solid var(--pink);color:var(--pink-d);border-radius:20px;padding:5px 16px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.mchip:hover{background:var(--pink);color:#fff;}
+.mchip.used{opacity:.35;pointer-events:none;}
+/* Blanks */
+.mdz-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0;}
+.mdz{display:inline-flex;align-items:center;justify-content:center;min-width:80px;height:36px;border:2.5px dashed var(--pink);border-radius:8px;padding:0 10px;font-size:.93rem;font-weight:700;cursor:pointer;color:var(--pink-d);transition:.18s;background:#fff;}
+.mdz.filled{border-style:solid;background:#fce7f3;}
+.mdz.correct{border-color:#16a34a;background:#dcfce7;color:#166534;}
+.mdz.wrong{border-color:#dc2626;background:#fee2e2;color:#991b1b;}
+.mdz-label{font-size:.9rem;color:#374151;}
+/* 4択 */
+.choice-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;}
+@media(max-width:480px){.choice-list{grid-template-columns:1fr;}}
+.choice-btn{padding:10px 14px;border:2.5px solid #d1d5db;border-radius:10px;background:#fff;font-size:.93rem;cursor:pointer;text-align:left;transition:.18s;}
+.choice-btn:hover{border-color:var(--pri);background:var(--pri-l);}
+.choice-btn.correct{border-color:#16a34a;background:#dcfce7;color:#166534;font-weight:700;}
+.choice-btn.wrong{border-color:#dc2626;background:#fee2e2;color:#991b1b;}
+.choice-btn:disabled{cursor:default;}
+/* Check / Sample buttons */
+.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.check-btn{background:var(--pri);color:#fff;border:none;border-radius:22px;padding:8px 22px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.check-btn:hover{background:var(--pri-d);}
+.sample-btn{background:#fff;color:var(--gray);border:2px solid #d1d5db;border-radius:22px;padding:8px 22px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.sample-btn:hover{background:#f3f4f6;}
+.msample{display:none;background:#fef9c3;border:1.5px solid #fbbf24;border-radius:8px;padding:8px 14px;font-size:.9rem;margin-top:8px;}
+.msample.show{display:block;}
+.fb-msg{font-size:.9rem;margin-top:6px;font-weight:600;}
+/* Score pips */
+.mini-score-row{display:flex;gap:6px;align-items:center;margin-bottom:10px;}
+.mini-score-pip{width:14px;height:14px;border-radius:50%;background:#e5e7eb;border:2px solid #d1d5db;transition:.3s;}
+.mini-score-pip.pass{background:#16a34a;border-color:#166534;}
+/* Pass banner */
+.pass-banner{display:none;background:linear-gradient(90deg,#166534,#16a34a);color:#fff;text-align:center;padding:16px;border-radius:10px;margin-top:16px;font-size:1.1rem;font-weight:900;}
+.pass-banner.show{display:block;}
+canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100%;height:100%;z-index:9999;}
+
+.intro{max-width:860px;margin:24px auto 0;padding:0 16px;}
+.intro-box{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 22px;line-height:1.9;font-size:.95rem;}
+.intro-box ol{margin:6px 0 0 1.4em;}
+.ch-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:24px;overflow:hidden;}
+.ch-head{display:flex;align-items:center;gap:14px;padding:16px 20px;background:linear-gradient(90deg,var(--pri-d),var(--pri));color:#fff;text-decoration:none;}
+.ch-head:hover{filter:brightness(1.08);}
+.ch-emoji{font-size:2rem;background:#fff;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ch-txt{display:flex;flex-direction:column;flex:1;}
+.ch-no{font-size:.8rem;opacity:.9;font-weight:700;}
+.ch-title{font-size:1.2rem;font-weight:900;}
+.ch-desc{font-size:.85rem;opacity:.9;}
+.ch-go{background:#fff;color:var(--pri-d);font-weight:800;border-radius:20px;padding:6px 14px;font-size:.88rem;white-space:nowrap;}
+.ch-units{list-style:none;margin:0;padding:10px 16px 14px;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;}
+@media(max-width:600px){.ch-units{grid-template-columns:1fr;}.ch-go{display:none;}}
+.ch-units a{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:10px;text-decoration:none;color:#1e293b;font-size:.92rem;}
+.ch-units a:hover{background:var(--pri-l);}
+.no{background:var(--pri-l);color:var(--pri-d);font-weight:800;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;}
+footer{text-align:center;color:var(--gray);font-size:.82rem;padding:10px 0 30px;}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧍 中学理科 人体のはたらき</h1>
+  <p>中学2年 生物分野（人体）　GAMBAプログラム 目次</p>
+</header>
+<div class="intro"><div class="intro-box">
+<b>📘 学習の進め方</b>
+<ol>
+<li>説明と図をよく読みます。</li>
+<li>「ミニテストに挑戦！」で、語群問題と4択問題にチャレンジします。</li>
+<li>各章の最後の「入試問題にチャレンジ！」で力をためします。</li>
+</ol>
+</div></div>
+<div class="units">
+<div class="ch-card">
+  <a class="ch-head" href="jintai_ch01.html">
+    <span class="ch-emoji">🍙</span>
+    <span class="ch-txt"><span class="ch-no">第1章</span><span class="ch-title">消化と吸収</span><span class="ch-desc">食べ物が消化・吸収されるしくみ</span></span>
+    <span class="ch-go">はじめる ▶</span>
+  </a>
+  <ul class="ch-units"><li><a href="jintai_ch01.html#card_mt1"><span class="no">1</span>消化・消化管・消化酵素とは？</a></li><li><a href="jintai_ch01.html#card_mt2"><span class="no">2</span>だ液のはたらきを調べよう（実験）</a></li><li><a href="jintai_ch01.html#card_mt3"><span class="no">3</span>セロハンを使った実験（発展）</a></li><li><a href="jintai_ch01.html#card_mt4"><span class="no">4</span>小腸のつくりと養分の吸収</a></li><li><a href="jintai_ch01.html#card_mt5"><span class="no">5</span>入試問題にチャレンジ！セロハンを使った実験</a></li><li><a href="jintai_ch01.html#card_mt6"><span class="no">6</span>入試問題にチャレンジ！だ液のはたらき（4本の試験管）</a></li><li><a href="jintai_ch01.html#card_mt7"><span class="no">7</span>発展：吸収された養分のゆくえ（肝門脈・リンパ管）</a></li></ul>
+</div>
+<div class="ch-card">
+  <a class="ch-head" href="jintai_ch02.html">
+    <span class="ch-emoji">🫁</span>
+    <span class="ch-txt"><span class="ch-no">第2章</span><span class="ch-title">呼吸と血液</span><span class="ch-desc">肺のしくみと、血液のはたらき</span></span>
+    <span class="ch-go">はじめる ▶</span>
+  </a>
+  <ul class="ch-units"><li><a href="jintai_ch02.html#card_mt1"><span class="no">1</span>ヒトの呼吸のしくみ（息を吸う・はく）</a></li><li><a href="jintai_ch02.html#card_mt2"><span class="no">2</span>肺の模型で呼吸のしくみを調べよう</a></li><li><a href="jintai_ch02.html#card_mt3"><span class="no">3</span>肺胞のつくりと気体の交換</a></li><li><a href="jintai_ch02.html#card_mt4"><span class="no">4</span>血液の成分</a></li><li><a href="jintai_ch02.html#card_mt5"><span class="no">5</span>血液と細胞の間の物質のやりとり（組織液）</a></li><li><a href="jintai_ch02.html#card_mt6"><span class="no">6</span>入試問題にチャレンジ！呼吸のしくみ</a></li><li><a href="jintai_ch02.html#card_mt7"><span class="no">7</span>入試問題にチャレンジ！血液の成分とはたらき</a></li></ul>
+</div>
+<div class="ch-card">
+  <a class="ch-head" href="jintai_ch03.html">
+    <span class="ch-emoji">❤️</span>
+    <span class="ch-txt"><span class="ch-no">第3章</span><span class="ch-title">心臓と血液の循環</span><span class="ch-desc">心臓のつくり・血液の流れ・排出</span></span>
+    <span class="ch-go">はじめる ▶</span>
+  </a>
+  <ul class="ch-units"><li><a href="jintai_ch03.html#card_mt1"><span class="no">1</span>動脈と静脈</a></li><li><a href="jintai_ch03.html#card_mt2"><span class="no">2</span>心臓のつくり</a></li><li><a href="jintai_ch03.html#card_mt3"><span class="no">3</span>肺循環と体循環</a></li><li><a href="jintai_ch03.html#card_mt4"><span class="no">4</span>血液循環のモデル図</a></li><li><a href="jintai_ch03.html#card_mt5"><span class="no">5</span>不要な物質の排出（肝臓とじん臓）</a></li><li><a href="jintai_ch03.html#card_mt6"><span class="no">6</span>入試問題にチャレンジ！心臓と血管</a></li><li><a href="jintai_ch03.html#card_mt7"><span class="no">7</span>入試問題にチャレンジ！血液の循環と排出</a></li></ul>
+</div>
+<div class="ch-card">
+  <a class="ch-head" href="jintai_ch04.html">
+    <span class="ch-emoji">👁️</span>
+    <span class="ch-txt"><span class="ch-no">第4章</span><span class="ch-title">感覚器官と運動</span><span class="ch-desc">目・耳のつくり、刺激の伝達と反射、運動のしくみ</span></span>
+    <span class="ch-go">はじめる ▶</span>
+  </a>
+  <ul class="ch-units"><li><a href="jintai_ch04.html#card_mt1"><span class="no">1</span>目のつくりとはたらき</a></li><li><a href="jintai_ch04.html#card_mt2"><span class="no">2</span>耳のつくりとはたらき</a></li><li><a href="jintai_ch04.html#card_mt3"><span class="no">3</span>刺激の伝達と神経系</a></li><li><a href="jintai_ch04.html#card_mt4"><span class="no">4</span>反射</a></li><li><a href="jintai_ch04.html#card_mt5"><span class="no">5</span>骨と筋肉（運動のしくみ）</a></li><li><a href="jintai_ch04.html#card_mt6"><span class="no">6</span>草食動物と肉食動物（歯と目のつき方）</a></li><li><a href="jintai_ch04.html#card_mt7"><span class="no">7</span>入試問題にチャレンジ！目と耳</a></li><li><a href="jintai_ch04.html#card_mt8"><span class="no">8</span>入試問題にチャレンジ！刺激の伝達と反射</a></li></ul>
+</div>
+</div>
+<footer>江原予備校 GAMBAシステム</footer>
+</body></html>
