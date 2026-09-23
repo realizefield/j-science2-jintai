@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>❤️ 中学理科 人体のはたらき③ 心臓と血液の循環</title>
+<style>
+:root{
+  --pri:#e11d48;--pri-d:#881337;--pri-l:#fecdd3;
+  --pink:#db2777;--pink-d:#9d174d;--pink-bg:#fce7f3;
+  --gray:#6b7280;--light:#f0fdf4;--card:#fff;
+  --radius:14px;--shadow:0 4px 18px rgba(0,0,0,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#fff1f2;font-family:'Helvetica Neue',Arial,'Hiragino Sans',sans-serif;color:#1e293b;}
+header{background:linear-gradient(135deg,var(--pri-d),var(--pri));color:#fff;text-align:center;padding:28px 20px 22px;}
+header h1{font-size:clamp(1.3rem,4vw,2rem);font-weight:900;letter-spacing:.04em;}
+header p{margin-top:6px;font-size:.93rem;opacity:.88;}
+.units{max-width:860px;margin:30px auto;padding:0 16px;}
+.unit-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:32px;overflow:hidden;}
+.unit-header{background:linear-gradient(90deg,var(--pri-d),var(--pri));color:#fff;padding:14px 22px;display:flex;align-items:center;gap:12px;}
+.unit-num{background:#fff;color:var(--pri-d);font-weight:900;font-size:1.1rem;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.unit-header h2{font-size:1.1rem;font-weight:800;}
+.unit-body{padding:22px;}
+.exp-img{margin:14px 0;}
+.exp-text{line-height:1.95;font-size:.97rem;margin:10px 0;}
+.exp-text p{margin-bottom:.85em;}
+.exp-text h3{font-size:.97rem;color:var(--pri-d);margin:1em 0 .5em;border-left:3px solid var(--pri);padding-left:8px;font-weight:800;}
+.pt-box{background:#dcfce7;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.warn-box{background:#fee2e2;border-left:4px solid #dc2626;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.memo-box{background:#fff1f2;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.88rem;line-height:1.8;}
+.amber-box{background:#fef3c7;border-left:4px solid #b45309;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.info-box{background:#f0fdff;border-left:4px solid #0e7490;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.eq-box{background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:14px;margin:10px 0;text-align:center;}
+.eq-box .eq{font-size:1rem;font-weight:800;color:var(--pri-d);letter-spacing:.03em;}
+.exp-tbl{width:100%;border-collapse:collapse;font-size:.85rem;margin:10px 0;}
+.exp-tbl th{background:var(--pri);color:#fff;padding:8px 10px;text-align:left;}
+.exp-tbl td{padding:8px 10px;border-bottom:1px solid #e5e7eb;vertical-align:top;line-height:1.65;}
+.exp-tbl tr:nth-child(even) td{background:#f9fafb;}
+.exp-tbl .nc{font-weight:700;white-space:nowrap;}
+.badge-p{background:#dcfce7;color:#14532d;border:1px solid #bbf7d0;font-size:.68rem;font-weight:700;padding:1px 7px;border-radius:10px;display:inline-block;margin-left:4px;}
+.kw-list{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px;}
+.kw{background:var(--pri-l);color:var(--pri-d);border-radius:20px;padding:4px 14px;font-size:.88rem;font-weight:700;}
+/* mini-test toggle */
+.mini-btn{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;background:var(--pink-bg);border:2.5px solid var(--pink);color:var(--pink-d);font-size:.97rem;font-weight:800;padding:10px 22px;border-radius:40px;margin:14px 0 0;transition:.2s;}
+.mini-btn:hover{background:var(--pink);color:#fff;}
+.mini-section{display:none;margin-top:16px;background:#fdf2f8;border:2px solid #f9a8d4;border-radius:12px;padding:18px;}
+.mini-section.open{display:block;}
+.q-block{margin-bottom:22px;}
+.q-block h4{font-size:.98rem;font-weight:800;color:var(--pri-d);margin-bottom:10px;}
+/* Word bank chips */
+.mchips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;}
+.mchip{background:#fff;border:2.5px solid var(--pink);color:var(--pink-d);border-radius:20px;padding:5px 16px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.mchip:hover{background:var(--pink);color:#fff;}
+.mchip.used{opacity:.35;pointer-events:none;}
+/* Blanks */
+.mdz-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0;}
+.mdz{display:inline-flex;align-items:center;justify-content:center;min-width:80px;height:36px;border:2.5px dashed var(--pink);border-radius:8px;padding:0 10px;font-size:.93rem;font-weight:700;cursor:pointer;color:var(--pink-d);transition:.18s;background:#fff;}
+.mdz.filled{border-style:solid;background:#fce7f3;}
+.mdz.correct{border-color:#16a34a;background:#dcfce7;color:#166534;}
+.mdz.wrong{border-color:#dc2626;background:#fee2e2;color:#991b1b;}
+.mdz-label{font-size:.9rem;color:#374151;}
+/* 4択 */
+.choice-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;}
+@media(max-width:480px){.choice-list{grid-template-columns:1fr;}}
+.choice-btn{padding:10px 14px;border:2.5px solid #d1d5db;border-radius:10px;background:#fff;font-size:.93rem;cursor:pointer;text-align:left;transition:.18s;}
+.choice-btn:hover{border-color:var(--pri);background:var(--pri-l);}
+.choice-btn.correct{border-color:#16a34a;background:#dcfce7;color:#166534;font-weight:700;}
+.choice-btn.wrong{border-color:#dc2626;background:#fee2e2;color:#991b1b;}
+.choice-btn:disabled{cursor:default;}
+/* Check / Sample buttons */
+.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.check-btn{background:var(--pri);color:#fff;border:none;border-radius:22px;padding:8px 22px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.check-btn:hover{background:var(--pri-d);}
+.sample-btn{background:#fff;color:var(--gray);border:2px solid #d1d5db;border-radius:22px;padding:8px 22px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.sample-btn:hover{background:#f3f4f6;}
+.msample{display:none;background:#fef9c3;border:1.5px solid #fbbf24;border-radius:8px;padding:8px 14px;font-size:.9rem;margin-top:8px;}
+.msample.show{display:block;}
+.fb-msg{font-size:.9rem;margin-top:6px;font-weight:600;}
+/* Score pips */
+.mini-score-row{display:flex;gap:6px;align-items:center;margin-bottom:10px;}
+.mini-score-pip{width:14px;height:14px;border-radius:50%;background:#e5e7eb;border:2px solid #d1d5db;transition:.3s;}
+.mini-score-pip.pass{background:#16a34a;border-color:#166534;}
+/* Pass banner */
+.pass-banner{display:none;background:linear-gradient(90deg,#166534,#16a34a);color:#fff;text-align:center;padding:16px;border-radius:10px;margin-top:16px;font-size:1.1rem;font-weight:900;}
+.pass-banner.show{display:block;}
+canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100%;height:100%;z-index:9999;}
+
+.q-img{max-width:100%;border-radius:10px;margin:6px auto 10px;display:block;}
+.q-note{font-size:.88rem;color:#555;margin-bottom:6px;line-height:1.8;}
+.src{font-size:.78rem;color:#6b7280;font-weight:600;margin-left:6px;}
+.chap-nav{max-width:860px;margin:0 auto 40px;padding:0 16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.chap-nav a{background:#fff;border:2px solid var(--pri);color:var(--pri-d);text-decoration:none;font-weight:800;padding:8px 18px;border-radius:24px;font-size:.92rem;}
+.chap-nav a.now{background:var(--pri);color:#fff;}
+.exp-tbl td b{color:var(--pri-d);}
+</style>
+</head>
+<body>
+<canvas id="confetti-canvas"></canvas>
+<header>
+  <h1>❤️ 中学理科 人体のはたらき③ 心臓と血液の循環</h1>
+  <p>中学理科 生物分野（人体）　図で確認・ミニテストで実力チェック</p>
+</header>
+<div class="units">
+
+<div class="unit-card" id="card_mt1">
+  <div class="unit-header">
+    <div class="unit-num">1</div>
+    <h2>動脈と静脈</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="doumaykujyoumyaku2.png" alt="動脈と静脈のつくり" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>心臓から送り出される血液が流れる血管を<b>動脈</b>、心臓へもどってくる血液が流れる血管を<b>静脈</b>といいます。</p>
+<table class="exp-tbl">
+<thead><tr><th>血管</th><th>つくり</th></tr></thead>
+<tbody>
+<tr><td class="nc">動脈</td><td>かべが<b>厚く</b>、<b>弾力性</b>がある（心臓から強い勢いで送り出される血液の圧力にたえるため）</td></tr>
+<tr><td class="nc">静脈</td><td>かべは動脈よりうすく、ところどころに血液の<b>逆流を防ぐ弁</b>がある</td></tr>
+</tbody></table>
+<h3>動脈血と静脈血</h3>
+<p><b>動脈血</b>…<b>酸素</b>を多くふくんだ血液。あざやかな赤色をしています。<br>
+<b>静脈血</b>…<b>二酸化炭素</b>を多くふくんだ血液。暗い赤色をしています。</p>
+<div class="warn-box"><b>【注意】</b>「動脈」には必ず「動脈血」が流れるとは限りません。<b>肺動脈には静脈血</b>、<b>肺静脈には動脈血</b>が流れます。</div>
+<div class="pt-box"><b>【重要】</b><br>
+・動脈…心臓から出る血液が流れる。かべが厚く弾力性がある<br>
+・静脈…心臓へもどる血液が流れる。逆流を防ぐ弁がある<br>
+・動脈血…酸素が多い／静脈血…二酸化炭素が多い<br>
+・肺動脈には静脈血、肺静脈には動脈血が流れる</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt1')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt1" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt1">
+      <div class="mini-score-row" id="pips_mt1"><div class="mini-score-pip" id="pip_mt1_1"></div><div class="mini-score-pip" id="pip_mt1_2"></div><div class="mini-score-pip" id="pip_mt1_3"></div><div class="mini-score-pip" id="pip_mt1_4"></div><div class="mini-score-pip" id="pip_mt1_5"></div></div>
+      <div class="q-block" id="qblock_mt1_q1">
+  <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">心臓から送り出された血液が流れる血管を①、心臓にもどる血液が流れる血管を②という。②には、血液の③を防ぐ④がある。酸素を多くふくむ血液を⑤という。</p>
+  <div class="mchips" id="chips_mt1_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt1_q1_0" onclick="returnChip('mt1',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt1_q1_1" onclick="returnChip('mt1',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt1_q1_2" onclick="returnChip('mt1',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt1_q1_3" onclick="returnChip('mt1',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt1_q1_4" onclick="returnChip('mt1',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt1',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt1',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q1"></div>
+  <div class="msample" id="samp_mt1_q1">答え: ①=動脈 / ②=静脈 / ③=逆流 / ④=弁 / ⑤=動脈血</div>
+</div>
+<div class="q-block" id="qblock_mt1_q2">
+  <h4>Q2. かべが厚く、弾力性がある血管はどれか。</h4>
+  <div class="choice-list" id="choices_mt1_q2">
+    <button class="choice-btn" onclick="pick4('mt1',2,0,0,'mt1_q2')">ア：動脈</button>
+    <button class="choice-btn" onclick="pick4('mt1',2,1,0,'mt1_q2')">イ：静脈</button>
+    <button class="choice-btn" onclick="pick4('mt1',2,2,0,'mt1_q2')">ウ：毛細血管</button>
+    <button class="choice-btn" onclick="pick4('mt1',2,3,0,'mt1_q2')">エ：リンパ管</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q2"></div>
+  <div class="msample" id="samp_mt1_q2">正解: ア：動脈　動脈は、心臓から送り出される血液の強い圧力にたえられるよう、かべが厚く弾力性があります。</div>
+</div>
+<div class="q-block" id="qblock_mt1_q3">
+  <h4>Q3. 静脈にある弁のはたらきはどれか。</h4>
+  <div class="choice-list" id="choices_mt1_q3">
+    <button class="choice-btn" onclick="pick4('mt1',3,0,2,'mt1_q3')">ア：血液を固める</button>
+    <button class="choice-btn" onclick="pick4('mt1',3,1,2,'mt1_q3')">イ：酸素をとり入れる</button>
+    <button class="choice-btn" onclick="pick4('mt1',3,2,2,'mt1_q3')">ウ：血液の逆流を防ぐ</button>
+    <button class="choice-btn" onclick="pick4('mt1',3,3,2,'mt1_q3')">エ：養分を吸収する</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q3"></div>
+  <div class="msample" id="samp_mt1_q3">正解: ウ：血液の逆流を防ぐ　静脈は血液の勢いが弱いので、弁によって血液が逆向きに流れるのを防いでいます。</div>
+</div>
+<div class="q-block" id="qblock_mt1_q4">
+  <h4>Q4. 二酸化炭素を多くふくみ、暗い赤色をした血液を何というか。</h4>
+  <div class="choice-list" id="choices_mt1_q4">
+    <button class="choice-btn" onclick="pick4('mt1',4,0,3,'mt1_q4')">ア：動脈血</button>
+    <button class="choice-btn" onclick="pick4('mt1',4,1,3,'mt1_q4')">イ：組織液</button>
+    <button class="choice-btn" onclick="pick4('mt1',4,2,3,'mt1_q4')">ウ：リンパ液</button>
+    <button class="choice-btn" onclick="pick4('mt1',4,3,3,'mt1_q4')">エ：静脈血</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q4"></div>
+  <div class="msample" id="samp_mt1_q4">正解: エ：静脈血　二酸化炭素を多くふくむ血液を静脈血といいます。</div>
+</div>
+<div class="q-block" id="qblock_mt1_q5">
+  <h4>Q5. 図の①〜④に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="doumaykujyoumyaku2-1.png" alt="動脈と静脈（番号あて）">
+  <div class="mchips" id="chips_mt1_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt1_q5_0" onclick="returnChip('mt1',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt1_q5_1" onclick="returnChip('mt1',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt1_q5_2" onclick="returnChip('mt1',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt1_q5_3" onclick="returnChip('mt1',5,3)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt1',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt1',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q5"></div>
+  <div class="msample" id="samp_mt1_q5">答え: ①=動 / ②=静 / ③=動脈 / ④=静脈</div>
+</div>
+      <div class="pass-banner" id="pass_mt1">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt2">
+  <div class="unit-header">
+    <div class="unit-num">2</div>
+    <h2>心臓のつくり</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="sinzou1.png" alt="心臓のつくり" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>心臓は<b>筋肉</b>でできていて、規則正しく縮んだりゆるんだり（<b>拍動</b>）することで、血液を全身に送り出すポンプのはたらきをしています。</p>
+<p>ヒトの心臓には、<b>右心房・右心室・左心房・左心室</b>の4つの部屋があります。</p>
+<p>・<b>心房</b>…血液がもどってくる部屋<br>・<b>心室</b>…血液を送り出す部屋</p>
+<div class="info-box"><b>【図の見方】</b>「右・左」は、図を見ている人ではなく、<b>心臓をもつ人の体の右・左</b>で決めます。そのため、正面から見た図では<b>右心房・右心室が向かって左側</b>にかかれます。</div>
+<table class="exp-tbl">
+<thead><tr><th>部屋</th><th>つながる血管</th><th>血液の流れ</th></tr></thead>
+<tbody>
+<tr><td class="nc">右心房</td><td><b>大静脈</b></td><td>全身からもどった血液が入る</td></tr>
+<tr><td class="nc">右心室</td><td><b>肺動脈</b></td><td>肺へ血液を送り出す</td></tr>
+<tr><td class="nc">左心房</td><td><b>肺静脈</b></td><td>肺からもどった血液が入る</td></tr>
+<tr><td class="nc">左心室</td><td><b>大動脈</b></td><td>全身へ血液を送り出す（かべがいちばん厚い）</td></tr>
+</tbody></table>
+<p>心房と心室の間などには<b>弁</b>があり、血液が逆流しないようになっています。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・心臓の4つの部屋…右心房・右心室・左心房・左心室<br>
+・左心室のかべがもっとも厚い（全身に血液を送り出すため）<br>
+・肺動脈…二酸化炭素を最も多くふくむ血液が流れる<br>
+・肺静脈…酸素を最も多くふくむ血液が流れる</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt2')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt2" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt2">
+      <div class="mini-score-row" id="pips_mt2"><div class="mini-score-pip" id="pip_mt2_1"></div><div class="mini-score-pip" id="pip_mt2_2"></div><div class="mini-score-pip" id="pip_mt2_3"></div><div class="mini-score-pip" id="pip_mt2_4"></div><div class="mini-score-pip" id="pip_mt2_5"></div></div>
+      <div class="q-block" id="qblock_mt2_q1">
+  <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">心臓の4つの部屋のうち、全身からもどった血液が入るのは①、肺へ血液を送り出すのは②、肺からもどった血液が入るのは③、全身へ血液を送り出すのは④である。かべがもっとも厚いのは⑤である。</p>
+  <div class="mchips" id="chips_mt2_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt2_q1_0" onclick="returnChip('mt2',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt2_q1_1" onclick="returnChip('mt2',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt2_q1_2" onclick="returnChip('mt2',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt2_q1_3" onclick="returnChip('mt2',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt2_q1_4" onclick="returnChip('mt2',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt2',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt2',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q1"></div>
+  <div class="msample" id="samp_mt2_q1">答え: ①=右心房 / ②=右心室 / ③=左心房 / ④=左心室 / ⑤=左心室</div>
+</div>
+<div class="q-block" id="qblock_mt2_q2">
+  <h4>Q2. 左心室から全身へ血液を送り出す血管はどれか。</h4>
+  <div class="choice-list" id="choices_mt2_q2">
+    <button class="choice-btn" onclick="pick4('mt2',2,0,2,'mt2_q2')">ア：大静脈</button>
+    <button class="choice-btn" onclick="pick4('mt2',2,1,2,'mt2_q2')">イ：肺動脈</button>
+    <button class="choice-btn" onclick="pick4('mt2',2,2,2,'mt2_q2')">ウ：大動脈</button>
+    <button class="choice-btn" onclick="pick4('mt2',2,3,2,'mt2_q2')">エ：肺静脈</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q2"></div>
+  <div class="msample" id="samp_mt2_q2">正解: ウ：大動脈　左心室から出た血液は、大動脈を通って全身へ送られます。</div>
+</div>
+<div class="q-block" id="qblock_mt2_q3">
+  <h4>Q3. 酸素を最も多くふくむ血液が流れている血管はどれか。</h4>
+  <div class="choice-list" id="choices_mt2_q3">
+    <button class="choice-btn" onclick="pick4('mt2',3,0,2,'mt2_q3')">ア：肺動脈</button>
+    <button class="choice-btn" onclick="pick4('mt2',3,1,2,'mt2_q3')">イ：大静脈</button>
+    <button class="choice-btn" onclick="pick4('mt2',3,2,2,'mt2_q3')">ウ：肺静脈</button>
+    <button class="choice-btn" onclick="pick4('mt2',3,3,2,'mt2_q3')">エ：大動脈</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q3"></div>
+  <div class="msample" id="samp_mt2_q3">正解: ウ：肺静脈　肺で酸素をとり入れたばかりの血液が流れる肺静脈が、最も酸素を多くふくんでいます。</div>
+</div>
+<div class="q-block" id="qblock_mt2_q4">
+  <h4>Q4. 正面から見た心臓の図で、右心房・右心室が向かって左側にかかれているのはなぜか。</h4>
+  <div class="choice-list" id="choices_mt2_q4">
+    <button class="choice-btn" onclick="pick4('mt2',4,0,1,'mt2_q4')">ア：心臓は体の左側にあるから</button>
+    <button class="choice-btn" onclick="pick4('mt2',4,1,1,'mt2_q4')">イ：心臓をもつ人の体の右・左で呼ぶため、正面から見ると左右が逆になるから</button>
+    <button class="choice-btn" onclick="pick4('mt2',4,2,1,'mt2_q4')">ウ：右心房・右心室の方が大きいから</button>
+    <button class="choice-btn" onclick="pick4('mt2',4,3,1,'mt2_q4')">エ：血液が左から右に流れるから</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q4"></div>
+  <div class="msample" id="samp_mt2_q4">正解: イ：心臓をもつ人の体の右・左で呼ぶため、正面から見ると左右が逆になるから　向かい合って見ているので、その人の「右」は見ている人から見て「左」になります。</div>
+</div>
+<div class="q-block" id="qblock_mt2_q5">
+  <h4>Q5. 図の①〜⑩に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="sinzou2_fix.png" alt="心臓のつくり（番号あて）">
+  <div class="mchips" id="chips_mt2_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt2_q5_0" onclick="returnChip('mt2',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt2_q5_1" onclick="returnChip('mt2',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt2_q5_2" onclick="returnChip('mt2',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt2_q5_3" onclick="returnChip('mt2',5,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt2_q5_4" onclick="returnChip('mt2',5,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt2_q5_5" onclick="returnChip('mt2',5,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt2_q5_6" onclick="returnChip('mt2',5,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt2_q5_7" onclick="returnChip('mt2',5,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt2_q5_8" onclick="returnChip('mt2',5,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt2_q5_9" onclick="returnChip('mt2',5,9)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt2',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt2',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q5"></div>
+  <div class="msample" id="samp_mt2_q5">答え: ①=肺動 / ②=大動 / ③=大静 / ④=肺静 / ⑤=右心房 / ⑥=右心室 / ⑦=左心房 / ⑧=左心室 / ⑨=二酸化炭素 / ⑩=酸素</div>
+</div>
+      <div class="pass-banner" id="pass_mt2">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt3">
+  <div class="unit-header">
+    <div class="unit-num">3</div>
+    <h2>肺循環と体循環</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="sinzoutaijunkan.png" alt="肺循環と体循環" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div><div class="exp-img"><img src="sinzoumodelzu1.png" alt="血管の名前の覚え方" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>血液は、心臓から出て全身をめぐり、また心臓にもどってきます。血液の通り道は、次の2つに分けられます。</p>
+<table class="exp-tbl">
+<thead><tr><th>循環</th><th>血液の流れ</th><th>はたらき</th></tr></thead>
+<tbody>
+<tr><td class="nc">肺循環</td><td><b>右心室</b>→<b>肺動脈</b>→<b>肺</b>→<b>肺静脈</b>→<b>左心房</b></td><td>肺で二酸化炭素を出し、酸素をとり入れる</td></tr>
+<tr><td class="nc">体循環</td><td><b>左心室</b>→<b>大動脈</b>→<b>体の各部</b>→<b>大静脈</b>→<b>右心房</b></td><td>細胞に酸素と養分をわたし、二酸化炭素や不要な物質を受けとる</td></tr>
+</tbody></table>
+<h3>血管の名前の覚え方</h3>
+<p>・心臓から<b>出ていく</b>血管 → 「<b>動脈</b>」／心臓に<b>もどる</b>血管 → 「<b>静脈</b>」<br>
+・<b>肺</b>とつながる血管 → 「<b>肺</b>○脈」／<b>体</b>とつながる血管 → 「<b>大</b>○脈」</p>
+<div class="pt-box"><b>【重要】</b><br>
+・肺循環…右心室→肺動脈→肺→肺静脈→左心房<br>
+・体循環…左心室→大動脈→体の各部→大静脈→右心房<br>
+・酸素が最も多い血液…肺静脈／二酸化炭素が最も多い血液…肺動脈</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt3')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt3" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt3">
+      <div class="mini-score-row" id="pips_mt3"><div class="mini-score-pip" id="pip_mt3_1"></div><div class="mini-score-pip" id="pip_mt3_2"></div><div class="mini-score-pip" id="pip_mt3_3"></div><div class="mini-score-pip" id="pip_mt3_4"></div><div class="mini-score-pip" id="pip_mt3_5"></div></div>
+      <div class="q-block" id="qblock_mt3_q1">
+  <h4>Q1. 文中の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">肺循環は、右心室→①→肺→②→左心房の順に血液が流れる。体循環は、左心室→③→体の各部→④→右心房の順に流れる。肺循環では、血液は肺で⑤をとり入れ、⑥を出す。</p>
+  <div class="mchips" id="chips_mt3_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt3_q1_0" onclick="returnChip('mt3',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt3_q1_1" onclick="returnChip('mt3',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt3_q1_2" onclick="returnChip('mt3',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt3_q1_3" onclick="returnChip('mt3',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt3_q1_4" onclick="returnChip('mt3',1,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt3_q1_5" onclick="returnChip('mt3',1,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt3',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt3',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q1"></div>
+  <div class="msample" id="samp_mt3_q1">答え: ①=肺動脈 / ②=肺静脈 / ③=大動脈 / ④=大静脈 / ⑤=酸素 / ⑥=二酸化炭素</div>
+</div>
+<div class="q-block" id="qblock_mt3_q2">
+  <h4>Q2. 肺循環の血液の流れとして正しいものはどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q2">
+    <button class="choice-btn" onclick="pick4('mt3',2,0,1,'mt3_q2')">ア：左心室→肺動脈→肺→肺静脈→右心房</button>
+    <button class="choice-btn" onclick="pick4('mt3',2,1,1,'mt3_q2')">イ：右心室→肺動脈→肺→肺静脈→左心房</button>
+    <button class="choice-btn" onclick="pick4('mt3',2,2,1,'mt3_q2')">ウ：右心房→肺静脈→肺→肺動脈→左心室</button>
+    <button class="choice-btn" onclick="pick4('mt3',2,3,1,'mt3_q2')">エ：左心室→大動脈→肺→大静脈→右心房</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q2"></div>
+  <div class="msample" id="samp_mt3_q2">正解: イ：右心室→肺動脈→肺→肺静脈→左心房　肺循環は右心室から始まり、肺動脈→肺→肺静脈を通って左心房にもどります。</div>
+</div>
+<div class="q-block" id="qblock_mt3_q3">
+  <h4>Q3. 体循環のはじまりとなる心臓の部屋はどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q3">
+    <button class="choice-btn" onclick="pick4('mt3',3,0,1,'mt3_q3')">ア：右心房</button>
+    <button class="choice-btn" onclick="pick4('mt3',3,1,1,'mt3_q3')">イ：左心室</button>
+    <button class="choice-btn" onclick="pick4('mt3',3,2,1,'mt3_q3')">ウ：右心室</button>
+    <button class="choice-btn" onclick="pick4('mt3',3,3,1,'mt3_q3')">エ：左心房</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q3"></div>
+  <div class="msample" id="samp_mt3_q3">正解: イ：左心室　体循環は、左心室から大動脈へ血液が送り出されるところから始まります。</div>
+</div>
+<div class="q-block" id="qblock_mt3_q4">
+  <h4>Q4. 二酸化炭素を最も多くふくむ血液が流れている血管はどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q4">
+    <button class="choice-btn" onclick="pick4('mt3',4,0,1,'mt3_q4')">ア：大動脈</button>
+    <button class="choice-btn" onclick="pick4('mt3',4,1,1,'mt3_q4')">イ：肺動脈</button>
+    <button class="choice-btn" onclick="pick4('mt3',4,2,1,'mt3_q4')">ウ：肺静脈</button>
+    <button class="choice-btn" onclick="pick4('mt3',4,3,1,'mt3_q4')">エ：大静脈</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q4"></div>
+  <div class="msample" id="samp_mt3_q4">正解: イ：肺動脈　全身から集まった血液が肺へ向かう肺動脈に、二酸化炭素が最も多くふくまれています。</div>
+</div>
+<div class="q-block" id="qblock_mt3_q5">
+  <h4>Q5. 静脈なのに、動脈血（酸素を多くふくむ血液）が流れている血管はどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q5">
+    <button class="choice-btn" onclick="pick4('mt3',5,0,0,'mt3_q5')">ア：肺静脈</button>
+    <button class="choice-btn" onclick="pick4('mt3',5,1,0,'mt3_q5')">イ：大静脈</button>
+    <button class="choice-btn" onclick="pick4('mt3',5,2,0,'mt3_q5')">ウ：じん静脈</button>
+    <button class="choice-btn" onclick="pick4('mt3',5,3,0,'mt3_q5')">エ：肝門脈</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q5"></div>
+  <div class="msample" id="samp_mt3_q5">正解: ア：肺静脈　肺静脈は心臓にもどる血管なので「静脈」ですが、肺で酸素をとり入れた動脈血が流れています。</div>
+</div>
+      <div class="pass-banner" id="pass_mt3">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt4">
+  <div class="unit-header">
+    <div class="unit-num">4</div>
+    <h2>血液循環のモデル図</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="hai_sinzou_junkan.png" alt="血液循環のモデル図" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>血液循環のようすを模式的に表した図を<b>モデル図</b>といいます。入試によく出るので、次の血管を必ず覚えましょう。</p>
+<table class="exp-tbl">
+<thead><tr><th>血液の特ちょう</th><th>血管</th><th>理由</th></tr></thead>
+<tbody>
+<tr><td class="nc">酸素が最も多い</td><td><b>肺静脈</b></td><td>肺で酸素をとり入れた直後</td></tr>
+<tr><td class="nc">二酸化炭素が最も多い</td><td><b>肺動脈</b></td><td>全身から二酸化炭素を集めて肺へ向かう</td></tr>
+<tr><td class="nc">養分が最も多い（食後）</td><td><b>肝門脈</b></td><td>小腸で吸収した養分を肝臓へ運ぶ</td></tr>
+<tr><td class="nc">尿素などの不要物が最も少ない</td><td><b>じん静脈</b></td><td>じん臓で不要物がこしとられた直後</td></tr>
+</tbody></table>
+<div class="pt-box"><b>【重要】</b><br>
+・酸素最多…肺静脈／二酸化炭素最多…肺動脈<br>
+・養分最多（食後）…肝門脈（小腸→肝臓）<br>
+・尿素などの不要物最少…じん静脈（じん臓から出る血管）</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt4')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt4" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 4</span>
+    </button>
+    <div class="mini-section" id="mini_mt4">
+      <div class="mini-score-row" id="pips_mt4"><div class="mini-score-pip" id="pip_mt4_1"></div><div class="mini-score-pip" id="pip_mt4_2"></div><div class="mini-score-pip" id="pip_mt4_3"></div><div class="mini-score-pip" id="pip_mt4_4"></div></div>
+      <div class="q-block" id="qblock_mt4_q1">
+  <h4>Q1. 図の①〜⑩に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="sinzoumodelzu2.png" alt="血液循環のモデル図（番号あて）">
+  <div class="mchips" id="chips_mt4_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt4_q1_0" onclick="returnChip('mt4',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt4_q1_1" onclick="returnChip('mt4',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt4_q1_2" onclick="returnChip('mt4',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt4_q1_3" onclick="returnChip('mt4',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt4_q1_4" onclick="returnChip('mt4',1,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt4_q1_5" onclick="returnChip('mt4',1,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt4_q1_6" onclick="returnChip('mt4',1,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt4_q1_7" onclick="returnChip('mt4',1,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt4_q1_8" onclick="returnChip('mt4',1,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt4_q1_9" onclick="returnChip('mt4',1,9)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt4',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt4',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q1"></div>
+  <div class="msample" id="samp_mt4_q1">答え: ①=肺動脈 / ②=肺静脈 / ③=大静脈 / ④=大動脈 / ⑤=右心房 / ⑥=右心室 / ⑦=左心房 / ⑧=左心室 / ⑨=肺静 / ⑩=肺動</div>
+</div>
+<div class="q-block" id="qblock_mt4_q2">
+  <h4>Q2. 文中の①〜④に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">酸素を最も多くふくむ血液が流れるのは①、二酸化炭素を最も多くふくむ血液が流れるのは②である。食後、ブドウ糖やアミノ酸などの養分を最も多くふくむ血液が流れるのは、小腸から肝臓へ向かう③である。尿素などの不要物が最も少ない血液が流れるのは、じん臓から出る④である。</p>
+  <div class="mchips" id="chips_mt4_q2"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt4_q2_0" onclick="returnChip('mt4',2,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt4_q2_1" onclick="returnChip('mt4',2,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt4_q2_2" onclick="returnChip('mt4',2,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt4_q2_3" onclick="returnChip('mt4',2,3)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt4',2)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt4',2)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q2"></div>
+  <div class="msample" id="samp_mt4_q2">答え: ①=肺静脈 / ②=肺動脈 / ③=肝門脈 / ④=じん静脈</div>
+</div>
+<div class="q-block" id="qblock_mt4_q3">
+  <h4>Q3. 肝門脈は、どこからどこへ血液を運ぶ血管か。</h4>
+  <div class="choice-list" id="choices_mt4_q3">
+    <button class="choice-btn" onclick="pick4('mt4',3,0,0,'mt4_q3')">ア：小腸から肝臓へ</button>
+    <button class="choice-btn" onclick="pick4('mt4',3,1,0,'mt4_q3')">イ：肝臓から小腸へ</button>
+    <button class="choice-btn" onclick="pick4('mt4',3,2,0,'mt4_q3')">ウ：心臓から肝臓へ</button>
+    <button class="choice-btn" onclick="pick4('mt4',3,3,0,'mt4_q3')">エ：じん臓から心臓へ</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q3"></div>
+  <div class="msample" id="samp_mt4_q3">正解: ア：小腸から肝臓へ　肝門脈は、小腸で吸収したブドウ糖やアミノ酸を肝臓へ運ぶ血管です。</div>
+</div>
+<div class="q-block" id="qblock_mt4_q4">
+  <h4>Q4. 尿素などの不要物が最も少ない血液が流れている血管はどれか。</h4>
+  <div class="choice-list" id="choices_mt4_q4">
+    <button class="choice-btn" onclick="pick4('mt4',4,0,1,'mt4_q4')">ア：じん動脈</button>
+    <button class="choice-btn" onclick="pick4('mt4',4,1,1,'mt4_q4')">イ：じん静脈</button>
+    <button class="choice-btn" onclick="pick4('mt4',4,2,1,'mt4_q4')">ウ：肝門脈</button>
+    <button class="choice-btn" onclick="pick4('mt4',4,3,1,'mt4_q4')">エ：大静脈</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q4"></div>
+  <div class="msample" id="samp_mt4_q4">正解: イ：じん静脈　じん臓で不要物がこしとられた直後の血液が流れるじん静脈が、不要物の最も少ない血管です。</div>
+</div>
+      <div class="pass-banner" id="pass_mt4">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt5">
+  <div class="unit-header">
+    <div class="unit-num">5</div>
+    <h2>不要な物質の排出（肝臓とじん臓）</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="jinzou_setumei.png" alt="じん臓のつくりと不要な物質の排出" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>図のように、背中側の腰の上あたりに左右1対の<b>じん臓</b>があります。じん臓でつくられた尿は<b>輸尿管</b>を通って<b>ぼうこう</b>にためられ、体外に出されます。</p>
+<p>細胞では、養分を分解してエネルギーをとり出しています（<b>細胞による呼吸</b>）。このとき、不要な物質ができます。</p>
+<table class="exp-tbl">
+<thead><tr><th>分解されるもの</th><th>できる不要な物質</th><th>体の外へ出す方法</th></tr></thead>
+<tbody>
+<tr><td class="nc">炭水化物・脂肪など</td><td><b>二酸化炭素</b>と水</td><td>二酸化炭素は<b>肺</b>からはき出す</td></tr>
+<tr><td class="nc">タンパク質</td><td><b>二酸化炭素</b>と水、有害な<b>アンモニア</b></td><td><b>肝臓</b>で害の少ない<b>尿素</b>に変える → <b>じん臓</b>でこしとり<b>尿</b>として出す</td></tr>
+</tbody></table>
+<h3>じん臓のはたらき</h3>
+<p><b>じん臓</b>は、血液中の尿素などの不要な物質や、余分な水分・塩分をこしとって<b>尿</b>をつくります。また、血液中の水分や塩分の量を調節しています。</p>
+<p>尿は<b>輸尿管</b>を通って<b>ぼうこう</b>に一時ためられ、体外に出されます。不要な物質の一部は、<b>汗</b>として皮ふからも出されます。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・アンモニア（有害）→ 肝臓で尿素（害が少ない）に変える<br>
+・じん臓…血液中の尿素などをこしとって尿をつくる。水分や塩分の量も調節<br>
+・じん臓 → 輸尿管 → ぼうこう（尿を一時ためる）→ 体外へ<br>
+・二酸化炭素は肺から、尿素は尿や汗として排出される</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt5')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt5" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt5">
+      <div class="mini-score-row" id="pips_mt5"><div class="mini-score-pip" id="pip_mt5_1"></div><div class="mini-score-pip" id="pip_mt5_2"></div><div class="mini-score-pip" id="pip_mt5_3"></div><div class="mini-score-pip" id="pip_mt5_4"></div><div class="mini-score-pip" id="pip_mt5_5"></div></div>
+      <div class="q-block" id="qblock_mt5_q1">
+  <h4>Q1. 文中の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">タンパク質が分解されると、有害な①ができる。①は②で害の少ない③に変えられる。③はじん臓で血液からこしとられて④となり、⑤を通って⑥に一時ためられてから体外に出される。</p>
+  <div class="mchips" id="chips_mt5_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt5_q1_0" onclick="returnChip('mt5',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt5_q1_1" onclick="returnChip('mt5',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt5_q1_2" onclick="returnChip('mt5',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt5_q1_3" onclick="returnChip('mt5',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt5_q1_4" onclick="returnChip('mt5',1,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt5_q1_5" onclick="returnChip('mt5',1,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt5',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt5',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q1"></div>
+  <div class="msample" id="samp_mt5_q1">答え: ①=アンモニア / ②=肝臓 / ③=尿素 / ④=尿 / ⑤=輸尿管 / ⑥=ぼうこう</div>
+</div>
+<div class="q-block" id="qblock_mt5_q2">
+  <h4>Q2. アンモニアを害の少ない尿素に変える器官はどれか。</h4>
+  <div class="choice-list" id="choices_mt5_q2">
+    <button class="choice-btn" onclick="pick4('mt5',2,0,1,'mt5_q2')">ア：じん臓</button>
+    <button class="choice-btn" onclick="pick4('mt5',2,1,1,'mt5_q2')">イ：肝臓</button>
+    <button class="choice-btn" onclick="pick4('mt5',2,2,1,'mt5_q2')">ウ：すい臓</button>
+    <button class="choice-btn" onclick="pick4('mt5',2,3,1,'mt5_q2')">エ：ぼうこう</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q2"></div>
+  <div class="msample" id="samp_mt5_q2">正解: イ：肝臓　有害なアンモニアは、肝臓で害の少ない尿素に変えられます。</div>
+</div>
+<div class="q-block" id="qblock_mt5_q3">
+  <h4>Q3. じん臓のはたらきの組み合わせとして正しいものはどれか。</h4>
+  <div class="choice-list" id="choices_mt5_q3">
+    <button class="choice-btn" onclick="pick4('mt5',3,0,1,'mt5_q3')">ア：細菌などの異物を分解する・二酸化炭素を排出する</button>
+    <button class="choice-btn" onclick="pick4('mt5',3,1,1,'mt5_q3')">イ：尿素などの不要物をこしとる・水分や塩分の量を調節する</button>
+    <button class="choice-btn" onclick="pick4('mt5',3,2,1,'mt5_q3')">ウ：アンモニアを尿素に変える・尿をためる</button>
+    <button class="choice-btn" onclick="pick4('mt5',3,3,1,'mt5_q3')">エ：養分を吸収する・胆汁をつくる</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q3"></div>
+  <div class="msample" id="samp_mt5_q3">正解: イ：尿素などの不要物をこしとる・水分や塩分の量を調節する　じん臓は、血液中の尿素などの不要物や余分な水分・塩分をこしとって尿をつくり、水分や塩分の量を調節します。</div>
+</div>
+<div class="q-block" id="qblock_mt5_q4">
+  <h4>Q4. 尿を一時的にためておく器官はどれか。</h4>
+  <div class="choice-list" id="choices_mt5_q4">
+    <button class="choice-btn" onclick="pick4('mt5',4,0,1,'mt5_q4')">ア：輸尿管</button>
+    <button class="choice-btn" onclick="pick4('mt5',4,1,1,'mt5_q4')">イ：ぼうこう</button>
+    <button class="choice-btn" onclick="pick4('mt5',4,2,1,'mt5_q4')">ウ：じん臓</button>
+    <button class="choice-btn" onclick="pick4('mt5',4,3,1,'mt5_q4')">エ：肝臓</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q4"></div>
+  <div class="msample" id="samp_mt5_q4">正解: イ：ぼうこう　じん臓でつくられた尿は、輸尿管を通ってぼうこうにためられます。</div>
+</div>
+<div class="q-block" id="qblock_mt5_q5">
+  <h4>Q5. 図の①〜⑯に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="jinzou_mondai.png" alt="じん臓のつくりと排出（番号あて）">
+  <div class="mchips" id="chips_mt5_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt5_q5_0" onclick="returnChip('mt5',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt5_q5_1" onclick="returnChip('mt5',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt5_q5_2" onclick="returnChip('mt5',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt5_q5_3" onclick="returnChip('mt5',5,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt5_q5_4" onclick="returnChip('mt5',5,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt5_q5_5" onclick="returnChip('mt5',5,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt5_q5_6" onclick="returnChip('mt5',5,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt5_q5_7" onclick="returnChip('mt5',5,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt5_q5_8" onclick="returnChip('mt5',5,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt5_q5_9" onclick="returnChip('mt5',5,9)">&nbsp;</span>
+    <span class="mdz-label">⑪</span><span class="mdz" id="mdz_mt5_q5_10" onclick="returnChip('mt5',5,10)">&nbsp;</span>
+    <span class="mdz-label">⑫</span><span class="mdz" id="mdz_mt5_q5_11" onclick="returnChip('mt5',5,11)">&nbsp;</span>
+    <span class="mdz-label">⑬</span><span class="mdz" id="mdz_mt5_q5_12" onclick="returnChip('mt5',5,12)">&nbsp;</span>
+    <span class="mdz-label">⑭</span><span class="mdz" id="mdz_mt5_q5_13" onclick="returnChip('mt5',5,13)">&nbsp;</span>
+    <span class="mdz-label">⑮</span><span class="mdz" id="mdz_mt5_q5_14" onclick="returnChip('mt5',5,14)">&nbsp;</span>
+    <span class="mdz-label">⑯</span><span class="mdz" id="mdz_mt5_q5_15" onclick="returnChip('mt5',5,15)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt5',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt5',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q5"></div>
+  <div class="msample" id="samp_mt5_q5">答え: ①=じん臓 / ②=輸尿管 / ③=ぼうこう / ④=水 / ⑤=二酸化炭素 / ⑥=水 / ⑦=二酸化炭素 / ⑧=アンモニア / ⑨=肝臓 / ⑩=尿素 / ⑪=尿 / ⑫=水分 / ⑬=塩分 / ⑭=尿素 / ⑮=輸尿管 / ⑯=ぼうこう<br>④と⑤、⑥と⑦、⑫〜⑭は順番が入れかわっていても正解です。</div>
+</div>
+      <div class="pass-banner" id="pass_mt5">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt6">
+  <div class="unit-header">
+    <div class="unit-num">6</div>
+    <h2>入試問題にチャレンジ！心臓と血管</h2>
+  </div>
+  <div class="unit-body">
+    
+    <div class="exp-text"><p>「動脈と静脈」「心臓のつくり」「肺循環と体循環」について、入試問題で確認しましょう。</p></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt6')">
+      🧪 確認問題に挑戦！
+      <span id="mini-badge-mt6" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 6</span>
+    </button>
+    <div class="mini-section" id="mini_mt6">
+      <div class="mini-score-row" id="pips_mt6"><div class="mini-score-pip" id="pip_mt6_1"></div><div class="mini-score-pip" id="pip_mt6_2"></div><div class="mini-score-pip" id="pip_mt6_3"></div><div class="mini-score-pip" id="pip_mt6_4"></div><div class="mini-score-pip" id="pip_mt6_5"></div><div class="mini-score-pip" id="pip_mt6_6"></div></div>
+      <div class="q-block" id="qblock_mt6_q1">
+  <h4>Q1. 図のa〜dの血管の名前を語群から選んで入れよう。</h4>
+  <img class="q-img" src="sinzou_kakunin1.png" alt="問題の図">
+  <div class="mchips" id="chips_mt6_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">a</span><span class="mdz" id="mdz_mt6_q1_0" onclick="returnChip('mt6',1,0)">&nbsp;</span>
+    <span class="mdz-label">b</span><span class="mdz" id="mdz_mt6_q1_1" onclick="returnChip('mt6',1,1)">&nbsp;</span>
+    <span class="mdz-label">c</span><span class="mdz" id="mdz_mt6_q1_2" onclick="returnChip('mt6',1,2)">&nbsp;</span>
+    <span class="mdz-label">d</span><span class="mdz" id="mdz_mt6_q1_3" onclick="returnChip('mt6',1,3)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt6',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt6',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q1"></div>
+  <div class="msample" id="samp_mt6_q1">答え: a=大静脈 / b=大動脈 / c=肺動脈 / d=肺静脈</div>
+</div>
+<div class="q-block" id="qblock_mt6_q2">
+  <h4>Q2. 図は心臓と血管のつながりを表している。血液の流れる順にa〜d、A〜Dを並べたものとして正しいものはどれか。ただし、cから始めること。</h4>
+  <img class="q-img" src="sinzou_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt6_q2">
+    <button class="choice-btn" onclick="pick4('mt6',2,0,2,'mt6_q2')">ア：c→C→A→a→b→D→B→d</button>
+    <button class="choice-btn" onclick="pick4('mt6',2,1,2,'mt6_q2')">イ：c→A→C→b→a→B→D→d</button>
+    <button class="choice-btn" onclick="pick4('mt6',2,2,2,'mt6_q2')">ウ：c→A→C→a→b→B→D→d</button>
+    <button class="choice-btn" onclick="pick4('mt6',2,3,2,'mt6_q2')">エ：c→B→D→a→b→A→C→d</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q2"></div>
+  <div class="msample" id="samp_mt6_q2">正解: ウ：c→A→C→a→b→B→D→d　c（大静脈）→A（右心房）→C（右心室）→a（肺動脈）→肺→b（肺静脈）→B（左心房）→D（左心室）→d（大動脈）の順です。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q3">
+  <h4>Q3. 同じ図で、心臓とつながっていて動脈血が流れている2つの血管の組み合わせはどれか。</h4>
+  <img class="q-img" src="sinzou_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt6_q3">
+    <button class="choice-btn" onclick="pick4('mt6',3,0,1,'mt6_q3')">ア：a（肺動脈）とc（大静脈）</button>
+    <button class="choice-btn" onclick="pick4('mt6',3,1,1,'mt6_q3')">イ：b（肺静脈）とd（大動脈）</button>
+    <button class="choice-btn" onclick="pick4('mt6',3,2,1,'mt6_q3')">ウ：a（肺動脈）とd（大動脈）</button>
+    <button class="choice-btn" onclick="pick4('mt6',3,3,1,'mt6_q3')">エ：b（肺静脈）とc（大静脈）</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q3"></div>
+  <div class="msample" id="samp_mt6_q3">正解: イ：b（肺静脈）とd（大動脈）　肺で酸素をとり入れた後の血液が流れるb（肺静脈）とd（大動脈）に、動脈血が流れています。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q4">
+  <h4>Q4. 同じ図のA〜Dのうち、静脈血が流れている部屋の組み合わせはどれか。</h4>
+  <img class="q-img" src="sinzou_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt6_q4">
+    <button class="choice-btn" onclick="pick4('mt6',4,0,3,'mt6_q4')">ア：AとB</button>
+    <button class="choice-btn" onclick="pick4('mt6',4,1,3,'mt6_q4')">イ：BとD</button>
+    <button class="choice-btn" onclick="pick4('mt6',4,2,3,'mt6_q4')">ウ：CとD</button>
+    <button class="choice-btn" onclick="pick4('mt6',4,3,3,'mt6_q4')">エ：AとC</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q4"></div>
+  <div class="msample" id="samp_mt6_q4">正解: エ：AとC　全身からもどった静脈血は、A（右心房）→C（右心室）を通って肺へ送られます。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q5">
+  <h4>Q5. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="jyoumyakuben.png" alt="問題の図">
+  <p class="q-note">心臓から出た血液が流れる血管を①といい、体の各部から心臓にもどる血液が流れる血管を②という。これらの血管のうち、図のXの③があるのは④である。③は血液の⑤を防ぐ役割をはたしている。</p>
+  <div class="mchips" id="chips_mt6_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt6_q5_0" onclick="returnChip('mt6',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt6_q5_1" onclick="returnChip('mt6',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt6_q5_2" onclick="returnChip('mt6',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt6_q5_3" onclick="returnChip('mt6',5,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt6_q5_4" onclick="returnChip('mt6',5,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt6',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt6',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q5"></div>
+  <div class="msample" id="samp_mt6_q5">答え: ①=動脈 / ②=静脈 / ③=弁 / ④=静脈 / ⑤=逆流</div>
+</div>
+<div class="q-block" id="qblock_mt6_q6">
+  <h4>Q6. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="junkan_kakunin1.png" alt="問題の図">
+  <p class="q-note">ヒトの血液循環のうち、右心室→（ア）→肺→（イ）→左心房と流れる道すじを①という。この道すじを流れる間に血液は、肺で②をとり入れて③を排出する。血液が、左心室→（エ）→からだの各部分→（ウ）→右心房と流れる道すじを④という。この間に血液は、細胞に⑤と養分をあたえ、細胞から③などの不要な物質を受けとる。</p>
+  <div class="mchips" id="chips_mt6_q6"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt6_q6_0" onclick="returnChip('mt6',6,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt6_q6_1" onclick="returnChip('mt6',6,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt6_q6_2" onclick="returnChip('mt6',6,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt6_q6_3" onclick="returnChip('mt6',6,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt6_q6_4" onclick="returnChip('mt6',6,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt6',6)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt6',6)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q6"></div>
+  <div class="msample" id="samp_mt6_q6">答え: ①=肺循環 / ②=酸素 / ③=二酸化炭素 / ④=体循環 / ⑤=酸素</div>
+</div>
+      <div class="pass-banner" id="pass_mt6">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt7">
+  <div class="unit-header">
+    <div class="unit-num">7</div>
+    <h2>入試問題にチャレンジ！血液の循環と排出</h2>
+  </div>
+  <div class="unit-body">
+    
+    <div class="exp-text"><p>「血液循環のモデル図」「排出」について、入試問題で確認しましょう。</p></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt7')">
+      🧪 確認問題に挑戦！
+      <span id="mini-badge-mt7" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 7</span>
+    </button>
+    <div class="mini-section" id="mini_mt7">
+      <div class="mini-score-row" id="pips_mt7"><div class="mini-score-pip" id="pip_mt7_1"></div><div class="mini-score-pip" id="pip_mt7_2"></div><div class="mini-score-pip" id="pip_mt7_3"></div><div class="mini-score-pip" id="pip_mt7_4"></div><div class="mini-score-pip" id="pip_mt7_5"></div><div class="mini-score-pip" id="pip_mt7_6"></div><div class="mini-score-pip" id="pip_mt7_7"></div></div>
+      <div class="q-block" id="qblock_mt7_q1">
+  <h4>Q1. 図は、じん臓とそのまわりのつくりを表している。A〜C、X・Yに当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="jinzou1.png" alt="問題の図">
+  <p class="q-note">A〜Cは器官の名前、X・Yは血液の流れから考えて「動脈」か「静脈」かを答えよう。</p>
+  <div class="mchips" id="chips_mt7_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">A</span><span class="mdz" id="mdz_mt7_q1_0" onclick="returnChip('mt7',1,0)">&nbsp;</span>
+    <span class="mdz-label">B</span><span class="mdz" id="mdz_mt7_q1_1" onclick="returnChip('mt7',1,1)">&nbsp;</span>
+    <span class="mdz-label">C</span><span class="mdz" id="mdz_mt7_q1_2" onclick="returnChip('mt7',1,2)">&nbsp;</span>
+    <span class="mdz-label">X</span><span class="mdz" id="mdz_mt7_q1_3" onclick="returnChip('mt7',1,3)">&nbsp;</span>
+    <span class="mdz-label">Y</span><span class="mdz" id="mdz_mt7_q1_4" onclick="returnChip('mt7',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt7',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt7',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q1"></div>
+  <div class="msample" id="samp_mt7_q1">答え: A=じん臓 / B=輸尿管 / C=ぼうこう / X=動脈 / Y=静脈</div>
+</div>
+<div class="q-block" id="qblock_mt7_q2">
+  <h4>Q2. 同じ図の血管X・Yのうち、不要物が少ない血液が流れているのはどちらか。</h4>
+  <img class="q-img" src="jinzou1.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q2">
+    <button class="choice-btn" onclick="pick4('mt7',2,0,1,'mt7_q2')">ア：X</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,1,1,'mt7_q2')">イ：Y</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,2,1,'mt7_q2')">ウ：XもYも同じ</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,3,1,'mt7_q2')">エ：どちらともいえない</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q2"></div>
+  <div class="msample" id="samp_mt7_q2">正解: イ：Y　Yはじん臓から出る血管（じん静脈）です。じん臓で不要物がこしとられた後なので、不要物が少なくなっています。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q3">
+  <h4>Q3. 図は、ヒトの血液の循環を模式的に表したものである。尿素が最も少ない血液が流れている血管はどれか。</h4>
+  <img class="q-img" src="junkan_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q3">
+    <button class="choice-btn" onclick="pick4('mt7',3,0,3,'mt7_q3')">ア：a</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,1,3,'mt7_q3')">イ：b</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,2,3,'mt7_q3')">ウ：c</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,3,3,'mt7_q3')">エ：d</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q3"></div>
+  <div class="msample" id="samp_mt7_q3">正解: エ：d　dはじん臓から出る血管です。じん臓で尿素がこしとられた直後なので、尿素が最も少なくなっています。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q4">
+  <h4>Q4. 同じ図で、食後、ブドウ糖やアミノ酸が最も多い血液が流れている血管はどれか。</h4>
+  <img class="q-img" src="junkan_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q4">
+    <button class="choice-btn" onclick="pick4('mt7',4,0,2,'mt7_q4')">ア：a</button>
+    <button class="choice-btn" onclick="pick4('mt7',4,1,2,'mt7_q4')">イ：b</button>
+    <button class="choice-btn" onclick="pick4('mt7',4,2,2,'mt7_q4')">ウ：c</button>
+    <button class="choice-btn" onclick="pick4('mt7',4,3,2,'mt7_q4')">エ：e</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q4"></div>
+  <div class="msample" id="samp_mt7_q4">正解: ウ：c　cは小腸から肝臓へ向かう肝門脈です。小腸で吸収した養分を運びます。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q5">
+  <h4>Q5. 同じ図で、酸素が最も多い血液と、二酸化炭素が最も多い血液が流れている血管の組み合わせはどれか。</h4>
+  <img class="q-img" src="junkan_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q5">
+    <button class="choice-btn" onclick="pick4('mt7',5,0,0,'mt7_q5')">ア：酸素：b　二酸化炭素：a</button>
+    <button class="choice-btn" onclick="pick4('mt7',5,1,0,'mt7_q5')">イ：酸素：a　二酸化炭素：b</button>
+    <button class="choice-btn" onclick="pick4('mt7',5,2,0,'mt7_q5')">ウ：酸素：b　二酸化炭素：e</button>
+    <button class="choice-btn" onclick="pick4('mt7',5,3,0,'mt7_q5')">エ：酸素：d　二酸化炭素：a</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q5"></div>
+  <div class="msample" id="samp_mt7_q5">正解: ア：酸素：b　二酸化炭素：a　b（肺から心臓へもどる肺静脈）は酸素が最も多く、a（心臓から肺へ向かう肺動脈）は二酸化炭素が最も多くなっています。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q6">
+  <h4>Q6. 図は血液の流れと各器官のつながりを示した模式図である。①〜⑦にあてはまる血管を、図のア〜クから選んで入れよう（同じ記号を何回使ってもよい）。</h4>
+  <img class="q-img" src="sinzoujunkanmondaizu_fix.png" alt="問題の図">
+  <p class="q-note">①養分を最も多くふくむ血液が流れている血管　②酸素を最も多くふくむ血液が流れている血管　③酸素が最も少ない血液が流れている血管　④二酸化炭素を最も多くふくむ血液が流れている血管　⑤アンモニアが最も少ない血液が流れている血管　⑥尿素が最も多い血液が流れている血管　⑦尿素などの不要な物質が最も少ない血液が流れている血管</p>
+  <div class="mchips" id="chips_mt7_q6"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt7_q6_0" onclick="returnChip('mt7',6,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt7_q6_1" onclick="returnChip('mt7',6,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt7_q6_2" onclick="returnChip('mt7',6,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt7_q6_3" onclick="returnChip('mt7',6,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt7_q6_4" onclick="returnChip('mt7',6,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt7_q6_5" onclick="returnChip('mt7',6,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt7_q6_6" onclick="returnChip('mt7',6,6)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt7',6)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt7',6)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q6"></div>
+  <div class="msample" id="samp_mt7_q6">答え: ①=オ / ②=イ / ③=ア / ④=ア / ⑤=ウ / ⑥=ウ / ⑦=キ<br>オ＝肝門脈（小腸→肝臓）、イ＝肺静脈、ア＝肺動脈、ウ＝肝臓から出る血管（肝臓でアンモニアが尿素に変えられた直後）、キ＝じん臓から出る血管です。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q7">
+  <h4>Q7. 文中の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">ブドウ糖が細胞による呼吸によって分解されると、①（気体）や水ができ、タンパク質が分解されると、体に有害な②（気体）ができる。①は③という器官から体外に放出される。体に有害な②は④という器官に運ばれ、そこで⑤という毒性の少ない物質につくりかえられる。⑤などの不要な物質は⑥で血液中からこしとられて、余分な水分とともに輸尿管を通ってぼうこうにためられ、尿として排出される。</p>
+  <div class="mchips" id="chips_mt7_q7"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt7_q7_0" onclick="returnChip('mt7',7,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt7_q7_1" onclick="returnChip('mt7',7,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt7_q7_2" onclick="returnChip('mt7',7,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt7_q7_3" onclick="returnChip('mt7',7,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt7_q7_4" onclick="returnChip('mt7',7,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt7_q7_5" onclick="returnChip('mt7',7,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt7',7)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt7',7)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q7"></div>
+  <div class="msample" id="samp_mt7_q7">答え: ①=二酸化炭素 / ②=アンモニア / ③=肺 / ④=肝臓 / ⑤=尿素 / ⑥=じん臓</div>
+</div>
+      <div class="pass-banner" id="pass_mt7">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="chap-nav"><a href="jintai_ch01.html">① 消化と吸収</a><a href="jintai_ch02.html">② 呼吸と血液</a><a href="jintai_ch03.html" class="now">③ 心臓と血液の循環</a><a href="jintai_ch04.html">④ 感覚器官</a></div>
+<script>
+// ============================================================
+// State
+// ============================================================
+const miniState = {};
+const miniScore = {};
+const miniTotal = {};
+const miniDone = {};
+
+miniScore['mt1'] = 0; miniTotal['mt1'] = 5; miniDone['mt1'] = [false, false, false, false, false];
+miniScore['mt2'] = 0; miniTotal['mt2'] = 5; miniDone['mt2'] = [false, false, false, false, false];
+miniScore['mt3'] = 0; miniTotal['mt3'] = 5; miniDone['mt3'] = [false, false, false, false, false];
+miniScore['mt4'] = 0; miniTotal['mt4'] = 4; miniDone['mt4'] = [false, false, false, false];
+miniScore['mt5'] = 0; miniTotal['mt5'] = 5; miniDone['mt5'] = [false, false, false, false, false];
+miniScore['mt6'] = 0; miniTotal['mt6'] = 6; miniDone['mt6'] = [false, false, false, false, false, false];
+miniScore['mt7'] = 0; miniTotal['mt7'] = 7; miniDone['mt7'] = [false, false, false, false, false, false, false];
+
+
+// ============================================================
+// Toggle mini section
+// ============================================================
+function toggleMini(secId) {
+  const el = document.getElementById('mini_' + secId);
+  el.classList.toggle('open');
+}
+
+// ============================================================
+// Word bank: initialize
+// ============================================================
+function initMiniBank(secId, qNum, words, answers, freeGroups) {
+  const key = secId + '_q' + qNum;
+  miniState[key] = {
+    words: [...words],
+    answers: [...answers],
+    filled: new Array(answers.length).fill(null),
+    chipUsed: new Array(words.length).fill(false),
+    freeGroups: freeGroups || []
+  };
+  // Build chips in shuffled order
+  const container = document.getElementById('chips_' + key);
+  if (!container) return;
+  container.innerHTML = '';
+  const order = [...Array(words.length).keys()];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  order.forEach(i => {
+    const btn = document.createElement('button');
+    btn.className = 'mchip';
+    btn.id = 'chip_' + key + '_' + i;
+    btn.textContent = words[i];
+    btn.onclick = () => fillMDZ(secId, qNum, i);
+    container.appendChild(btn);
+  });
+}
+
+// ============================================================
+// Fill blank
+// ============================================================
+function fillMDZ(secId, qNum, chipIdx) {
+  const key = secId + '_q' + qNum;
+  const st = miniState[key];
+  if (!st || st.chipUsed[chipIdx]) return;
+  // Find first empty blank
+  const emptyIdx = st.filled.findIndex(v => v === null);
+  if (emptyIdx < 0) return;
+  st.filled[emptyIdx] = chipIdx;
+  st.chipUsed[chipIdx] = true;
+  document.getElementById('chip_' + key + '_' + chipIdx).classList.add('used');
+  const mdz = document.getElementById('mdz_' + key + '_' + emptyIdx);
+  if (mdz) { mdz.textContent = st.words[chipIdx]; mdz.classList.add('filled'); }
+}
+
+// ============================================================
+// Return chip (click on filled blank)
+// ============================================================
+function returnChip(secId, qNum, blankIdx) {
+  const key = secId + '_q' + qNum;
+  const st = miniState[key];
+  if (!st || st.filled[blankIdx] === null) return;
+  const chipIdx = st.filled[blankIdx];
+  st.filled[blankIdx] = null;
+  st.chipUsed[chipIdx] = false;
+  document.getElementById('chip_' + key + '_' + chipIdx).classList.remove('used');
+  const mdz = document.getElementById('mdz_' + key + '_' + blankIdx);
+  if (mdz) { mdz.textContent = '\u00a0'; mdz.className = 'mdz'; }
+}
+
+// ============================================================
+// Check word bank answer
+// ============================================================
+function checkMiniBank(secId, qNum) {
+  const key = secId + '_q' + qNum;
+  const st = miniState[key];
+  if (!st) return;
+  // Pre-compute which blank indices belong to freeGroups and whether each group is satisfied
+  const freeBlankSet = new Set();
+  const freeBlankCorrect = {};
+  (st.freeGroups || []).forEach(group => {
+    const filledVals = group.map(bi => st.filled[bi] !== null ? st.words[st.filled[bi]].replace(/（.*?）/,'') : null);
+    const correctVals = group.map(bi => st.answers[bi].replace(/（.*?）/,'')).slice().sort();
+    const filledSorted = [...filledVals].sort();
+    const groupOK = filledVals.every(v => v !== null) && filledSorted.every((v,i) => v === correctVals[i]);
+    group.forEach(bi => { freeBlankSet.add(bi); freeBlankCorrect[bi] = groupOK; });
+  });
+
+  let allCorrect = true;
+  st.filled.forEach((chipIdx, bi) => {
+    const mdz = document.getElementById('mdz_' + key + '_' + bi);
+    if (!mdz) return;
+    if (chipIdx === null) { allCorrect = false; return; }
+    let isCorrect;
+    if (freeBlankSet.has(bi)) {
+      isCorrect = freeBlankCorrect[bi];
+    } else {
+      const word = st.words[chipIdx];
+      const correct = st.answers[bi];
+      isCorrect = (word === correct || word.replace(/（.*?）/,'') === correct.replace(/（.*?）/,''));
+    }
+    if (isCorrect) {
+      mdz.classList.remove('wrong'); mdz.classList.add('correct');
+    } else {
+      mdz.classList.remove('correct'); mdz.classList.add('wrong');
+      allCorrect = false;
+    }
+  });
+  const fb = document.getElementById('fb_' + key);
+  if (allCorrect) {
+    if (fb) fb.textContent = '✅ 正解！すばらしい！';
+    markPass(secId, qNum - 1);
+    flowerPetals();
+  } else {
+    if (fb) fb.textContent = '❌ もう一度確認しよう！';
+  }
+}
+
+// ============================================================
+// Show sample answer
+// ============================================================
+function showSample(secId, qNum) {
+  const key = secId + '_q' + qNum;
+  const el = document.getElementById('samp_' + key);
+  if (el) el.classList.toggle('show');
+}
+
+// ============================================================
+// 4-choice picker
+// ============================================================
+function pick4(secId, qNum, chosen, correct, qid) {
+  const btns = document.querySelectorAll('#choices_' + qid + ' .choice-btn');
+  btns.forEach(b => b.disabled = true);
+  const fb = document.getElementById('fb_' + qid);
+  if (chosen === correct) {
+    btns[chosen].classList.add('correct');
+    if (fb) fb.textContent = '✅ 正解！';
+    markPass(secId, qNum - 1);
+    flowerPetals();
+  } else {
+    btns[chosen].classList.add('wrong');
+    btns[correct].classList.add('correct');
+    if (fb) fb.textContent = '❌ 残念！正解は上の緑のボタンです。';
+    document.getElementById('samp_' + qid).classList.add('show');
+  }
+}
+
+// ============================================================
+// Mark pass & check unit completion
+// ============================================================
+function markPass(secId, qIdx) {
+  if (miniDone[secId][qIdx]) return;
+  miniDone[secId][qIdx] = true;
+  miniScore[secId]++;
+  const pip = document.getElementById('pip_' + secId + '_' + (qIdx + 1));
+  if (pip) pip.classList.add('pass');
+  const badge = document.getElementById('mini-badge-' + secId);
+  if (badge) badge.textContent = miniScore[secId] + ' / ' + miniTotal[secId];
+  if (miniScore[secId] >= miniTotal[secId]) {
+    const banner = document.getElementById('pass_' + secId);
+    if (banner) banner.classList.add('show');
+    fireConfetti();
+  }
+}
+
+// ============================================================
+// Flower petals animation (single question correct)
+// ============================================================
+function flowerPetals() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  const petals = [];
+  const colors = ['#f472b6','#fb7185','#fbbf24','#34d399','#60a5fa','#a78bfa'];
+  for (let i = 0; i < 60; i++) {
+    petals.push({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * 200,
+      r: 4 + Math.random() * 6,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 3,
+      vy: 2 + Math.random() * 3,
+      rot: Math.random() * Math.PI * 2,
+      rotV: (Math.random() - 0.5) * 0.15
+    });
+  }
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    petals.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, p.r, p.r * 0.55, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+      p.x += p.vx; p.y += p.vy; p.rot += p.rotV;
+    });
+    frame++;
+    if (frame < 80) requestAnimationFrame(draw);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  draw();
+}
+
+// ============================================================
+// Confetti (unit complete)
+// ============================================================
+function fireConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  const pieces = [];
+  const colors = ['#f472b6','#fbbf24','#34d399','#60a5fa','#a78bfa','#fb7185','#fff'];
+  for (let i = 0; i < 150; i++) {
+    pieces.push({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * 300,
+      w: 8 + Math.random() * 10,
+      h: 4 + Math.random() * 6,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 5,
+      vy: 3 + Math.random() * 4,
+      rot: Math.random() * Math.PI * 2,
+      rotV: (Math.random() - 0.5) * 0.2
+    });
+  }
+  let frame2 = 0;
+  function draw2() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pieces.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+      ctx.restore();
+      p.x += p.vx; p.y += p.vy; p.rot += p.rotV;
+    });
+    frame2++;
+    if (frame2 < 140) requestAnimationFrame(draw2);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  draw2();
+}
+
+
+
+// ============================================================
+// Initialize all word banks
+// ============================================================
+
+initMiniBank('mt1',1,["動脈", "静脈", "逆流", "弁", "動脈血"],["動脈", "静脈", "逆流", "弁", "動脈血"],[]);
+initMiniBank('mt1',5,["動", "静", "動脈", "静脈"],["動", "静", "動脈", "静脈"],[]);
+initMiniBank('mt2',1,["右心房", "右心室", "左心房", "左心室", "左心室"],["右心房", "右心室", "左心房", "左心室", "左心室"],[]);
+initMiniBank('mt2',5,["肺動", "大動", "大静", "肺静", "右心房", "右心室", "左心房", "左心室", "二酸化炭素", "酸素"],["肺動", "大動", "大静", "肺静", "右心房", "右心室", "左心房", "左心室", "二酸化炭素", "酸素"],[]);
+initMiniBank('mt3',1,["肺動脈", "肺静脈", "大動脈", "大静脈", "酸素", "二酸化炭素"],["肺動脈", "肺静脈", "大動脈", "大静脈", "酸素", "二酸化炭素"],[]);
+initMiniBank('mt4',1,["肺動脈", "肺静脈", "大静脈", "大動脈", "右心房", "右心室", "左心房", "左心室", "肺静", "肺動"],["肺動脈", "肺静脈", "大静脈", "大動脈", "右心房", "右心室", "左心房", "左心室", "肺静", "肺動"],[]);
+initMiniBank('mt4',2,["肺静脈", "肺動脈", "肝門脈", "じん静脈"],["肺静脈", "肺動脈", "肝門脈", "じん静脈"],[]);
+initMiniBank('mt5',1,["アンモニア", "肝臓", "尿素", "尿", "輸尿管", "ぼうこう"],["アンモニア", "肝臓", "尿素", "尿", "輸尿管", "ぼうこう"],[]);
+initMiniBank('mt5',5,["じん臓", "輸尿管", "ぼうこう", "水", "二酸化炭素", "水", "二酸化炭素", "アンモニア", "肝臓", "尿素", "尿", "水分", "塩分", "尿素", "輸尿管", "ぼうこう"],["じん臓", "輸尿管", "ぼうこう", "水", "二酸化炭素", "水", "二酸化炭素", "アンモニア", "肝臓", "尿素", "尿", "水分", "塩分", "尿素", "輸尿管", "ぼうこう"],[[3, 4], [5, 6], [11, 12, 13]]);
+initMiniBank('mt6',1,["大静脈", "大動脈", "肺動脈", "肺静脈"],["大静脈", "大動脈", "肺動脈", "肺静脈"],[]);
+initMiniBank('mt6',5,["動脈", "静脈", "弁", "静脈", "逆流"],["動脈", "静脈", "弁", "静脈", "逆流"],[]);
+initMiniBank('mt6',6,["肺循環", "酸素", "二酸化炭素", "体循環", "酸素"],["肺循環", "酸素", "二酸化炭素", "体循環", "酸素"],[]);
+initMiniBank('mt7',1,["じん臓", "輸尿管", "ぼうこう", "動脈", "静脈"],["じん臓", "輸尿管", "ぼうこう", "動脈", "静脈"],[]);
+initMiniBank('mt7',6,["オ", "イ", "ア", "ア", "ウ", "ウ", "キ"],["オ", "イ", "ア", "ア", "ウ", "ウ", "キ"],[]);
+initMiniBank('mt7',7,["二酸化炭素", "アンモニア", "肺", "肝臓", "尿素", "じん臓"],["二酸化炭素", "アンモニア", "肺", "肝臓", "尿素", "じん臓"],[]);
+
+</script>
+
+</body></html>

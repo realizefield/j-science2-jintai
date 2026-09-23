@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🫁 中学理科 人体のはたらき② 呼吸と血液</title>
+<style>
+:root{
+  --pri:#e11d48;--pri-d:#881337;--pri-l:#fecdd3;
+  --pink:#db2777;--pink-d:#9d174d;--pink-bg:#fce7f3;
+  --gray:#6b7280;--light:#f0fdf4;--card:#fff;
+  --radius:14px;--shadow:0 4px 18px rgba(0,0,0,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#fff1f2;font-family:'Helvetica Neue',Arial,'Hiragino Sans',sans-serif;color:#1e293b;}
+header{background:linear-gradient(135deg,var(--pri-d),var(--pri));color:#fff;text-align:center;padding:28px 20px 22px;}
+header h1{font-size:clamp(1.3rem,4vw,2rem);font-weight:900;letter-spacing:.04em;}
+header p{margin-top:6px;font-size:.93rem;opacity:.88;}
+.units{max-width:860px;margin:30px auto;padding:0 16px;}
+.unit-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:32px;overflow:hidden;}
+.unit-header{background:linear-gradient(90deg,var(--pri-d),var(--pri));color:#fff;padding:14px 22px;display:flex;align-items:center;gap:12px;}
+.unit-num{background:#fff;color:var(--pri-d);font-weight:900;font-size:1.1rem;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.unit-header h2{font-size:1.1rem;font-weight:800;}
+.unit-body{padding:22px;}
+.exp-img{margin:14px 0;}
+.exp-text{line-height:1.95;font-size:.97rem;margin:10px 0;}
+.exp-text p{margin-bottom:.85em;}
+.exp-text h3{font-size:.97rem;color:var(--pri-d);margin:1em 0 .5em;border-left:3px solid var(--pri);padding-left:8px;font-weight:800;}
+.pt-box{background:#dcfce7;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.warn-box{background:#fee2e2;border-left:4px solid #dc2626;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.memo-box{background:#fff1f2;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.88rem;line-height:1.8;}
+.amber-box{background:#fef3c7;border-left:4px solid #b45309;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.info-box{background:#f0fdff;border-left:4px solid #0e7490;border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0;font-size:.91rem;line-height:1.8;}
+.eq-box{background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:14px;margin:10px 0;text-align:center;}
+.eq-box .eq{font-size:1rem;font-weight:800;color:var(--pri-d);letter-spacing:.03em;}
+.exp-tbl{width:100%;border-collapse:collapse;font-size:.85rem;margin:10px 0;}
+.exp-tbl th{background:var(--pri);color:#fff;padding:8px 10px;text-align:left;}
+.exp-tbl td{padding:8px 10px;border-bottom:1px solid #e5e7eb;vertical-align:top;line-height:1.65;}
+.exp-tbl tr:nth-child(even) td{background:#f9fafb;}
+.exp-tbl .nc{font-weight:700;white-space:nowrap;}
+.badge-p{background:#dcfce7;color:#14532d;border:1px solid #bbf7d0;font-size:.68rem;font-weight:700;padding:1px 7px;border-radius:10px;display:inline-block;margin-left:4px;}
+.kw-list{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px;}
+.kw{background:var(--pri-l);color:var(--pri-d);border-radius:20px;padding:4px 14px;font-size:.88rem;font-weight:700;}
+/* mini-test toggle */
+.mini-btn{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;background:var(--pink-bg);border:2.5px solid var(--pink);color:var(--pink-d);font-size:.97rem;font-weight:800;padding:10px 22px;border-radius:40px;margin:14px 0 0;transition:.2s;}
+.mini-btn:hover{background:var(--pink);color:#fff;}
+.mini-section{display:none;margin-top:16px;background:#fdf2f8;border:2px solid #f9a8d4;border-radius:12px;padding:18px;}
+.mini-section.open{display:block;}
+.q-block{margin-bottom:22px;}
+.q-block h4{font-size:.98rem;font-weight:800;color:var(--pri-d);margin-bottom:10px;}
+/* Word bank chips */
+.mchips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;}
+.mchip{background:#fff;border:2.5px solid var(--pink);color:var(--pink-d);border-radius:20px;padding:5px 16px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.mchip:hover{background:var(--pink);color:#fff;}
+.mchip.used{opacity:.35;pointer-events:none;}
+/* Blanks */
+.mdz-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0;}
+.mdz{display:inline-flex;align-items:center;justify-content:center;min-width:80px;height:36px;border:2.5px dashed var(--pink);border-radius:8px;padding:0 10px;font-size:.93rem;font-weight:700;cursor:pointer;color:var(--pink-d);transition:.18s;background:#fff;}
+.mdz.filled{border-style:solid;background:#fce7f3;}
+.mdz.correct{border-color:#16a34a;background:#dcfce7;color:#166534;}
+.mdz.wrong{border-color:#dc2626;background:#fee2e2;color:#991b1b;}
+.mdz-label{font-size:.9rem;color:#374151;}
+/* 4択 */
+.choice-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;}
+@media(max-width:480px){.choice-list{grid-template-columns:1fr;}}
+.choice-btn{padding:10px 14px;border:2.5px solid #d1d5db;border-radius:10px;background:#fff;font-size:.93rem;cursor:pointer;text-align:left;transition:.18s;}
+.choice-btn:hover{border-color:var(--pri);background:var(--pri-l);}
+.choice-btn.correct{border-color:#16a34a;background:#dcfce7;color:#166534;font-weight:700;}
+.choice-btn.wrong{border-color:#dc2626;background:#fee2e2;color:#991b1b;}
+.choice-btn:disabled{cursor:default;}
+/* Check / Sample buttons */
+.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.check-btn{background:var(--pri);color:#fff;border:none;border-radius:22px;padding:8px 22px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.check-btn:hover{background:var(--pri-d);}
+.sample-btn{background:#fff;color:var(--gray);border:2px solid #d1d5db;border-radius:22px;padding:8px 22px;font-size:.93rem;font-weight:700;cursor:pointer;transition:.18s;}
+.sample-btn:hover{background:#f3f4f6;}
+.msample{display:none;background:#fef9c3;border:1.5px solid #fbbf24;border-radius:8px;padding:8px 14px;font-size:.9rem;margin-top:8px;}
+.msample.show{display:block;}
+.fb-msg{font-size:.9rem;margin-top:6px;font-weight:600;}
+/* Score pips */
+.mini-score-row{display:flex;gap:6px;align-items:center;margin-bottom:10px;}
+.mini-score-pip{width:14px;height:14px;border-radius:50%;background:#e5e7eb;border:2px solid #d1d5db;transition:.3s;}
+.mini-score-pip.pass{background:#16a34a;border-color:#166534;}
+/* Pass banner */
+.pass-banner{display:none;background:linear-gradient(90deg,#166534,#16a34a);color:#fff;text-align:center;padding:16px;border-radius:10px;margin-top:16px;font-size:1.1rem;font-weight:900;}
+.pass-banner.show{display:block;}
+canvas#confetti-canvas{position:fixed;top:0;left:0;pointer-events:none;width:100%;height:100%;z-index:9999;}
+
+.q-img{max-width:100%;border-radius:10px;margin:6px auto 10px;display:block;}
+.q-note{font-size:.88rem;color:#555;margin-bottom:6px;line-height:1.8;}
+.src{font-size:.78rem;color:#6b7280;font-weight:600;margin-left:6px;}
+.chap-nav{max-width:860px;margin:0 auto 40px;padding:0 16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.chap-nav a{background:#fff;border:2px solid var(--pri);color:var(--pri-d);text-decoration:none;font-weight:800;padding:8px 18px;border-radius:24px;font-size:.92rem;}
+.chap-nav a.now{background:var(--pri);color:#fff;}
+.exp-tbl td b{color:var(--pri-d);}
+</style>
+</head>
+<body>
+<canvas id="confetti-canvas"></canvas>
+<header>
+  <h1>🫁 中学理科 人体のはたらき② 呼吸と血液</h1>
+  <p>中学理科 生物分野（人体）　図で確認・ミニテストで実力チェック</p>
+</header>
+<div class="units">
+
+<div class="unit-card" id="card_mt1">
+  <div class="unit-header">
+    <div class="unit-num">1</div>
+    <h2>ヒトの呼吸のしくみ（息を吸う・はく）</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="kokyuu1.png" alt="ヒトの呼吸（息を吸うとき・はくとき）" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>鼻や口から吸った空気は、<b>気管</b>を通り、枝分かれした<b>気管支</b>を通って<b>肺</b>に入ります。</p>
+<p>肺には<b>筋肉がない</b>ので、肺は自分でふくらんだり、ちぢんだりすることができません。肺のまわりの<b>ろっ骨（肋骨）</b>とその間の筋肉、そして肺の下にある<b>横隔膜</b>が動くことで、空気が出入りします。</p>
+<table class="exp-tbl">
+<thead><tr><th></th><th>息を吸うとき</th><th>息をはくとき</th></tr></thead>
+<tbody>
+<tr><td class="nc">ろっ骨</td><td><b>上がる</b></td><td><b>下がる</b></td></tr>
+<tr><td class="nc">横隔膜</td><td><b>下がる</b></td><td><b>上がる</b></td></tr>
+<tr><td class="nc">胸の中の空間</td><td>広くなる</td><td>せまくなる</td></tr>
+<tr><td class="nc">肺</td><td><b>ふくらむ</b>（空気が入る）</td><td><b>ちぢむ</b>（空気が出る）</td></tr>
+</tbody></table>
+<p>ろっ骨と横隔膜は、いつも<b>反対の向き</b>に動きます。「吸うとき、ろっ骨は上、横隔膜は下」と覚えましょう。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・肺には筋肉がない → ろっ骨と横隔膜の動きで空気を出し入れする<br>
+・息を吸う…ろっ骨が上がり、横隔膜が下がる → 肺がふくらむ<br>
+・息をはく…ろっ骨が下がり、横隔膜が上がる → 肺がちぢむ</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt1')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt1" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt1">
+      <div class="mini-score-row" id="pips_mt1"><div class="mini-score-pip" id="pip_mt1_1"></div><div class="mini-score-pip" id="pip_mt1_2"></div><div class="mini-score-pip" id="pip_mt1_3"></div><div class="mini-score-pip" id="pip_mt1_4"></div><div class="mini-score-pip" id="pip_mt1_5"></div></div>
+      <div class="q-block" id="qblock_mt1_q1">
+  <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">肺には①がないため、自分でふくらむことができない。息を吸うときは、ろっ骨が②がり、③が下がって、肺が④。息をはくときは、ろっ骨が下がり、横隔膜が⑤がって、肺がちぢむ。</p>
+  <div class="mchips" id="chips_mt1_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt1_q1_0" onclick="returnChip('mt1',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt1_q1_1" onclick="returnChip('mt1',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt1_q1_2" onclick="returnChip('mt1',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt1_q1_3" onclick="returnChip('mt1',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt1_q1_4" onclick="returnChip('mt1',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt1',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt1',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q1"></div>
+  <div class="msample" id="samp_mt1_q1">答え: ①=筋肉 / ②=上 / ③=横隔膜 / ④=ふくらむ / ⑤=上</div>
+</div>
+<div class="q-block" id="qblock_mt1_q2">
+  <h4>Q2. 息を吸うとき、横隔膜はどのように動くか。</h4>
+  <div class="choice-list" id="choices_mt1_q2">
+    <button class="choice-btn" onclick="pick4('mt1',2,0,1,'mt1_q2')">ア：上がる</button>
+    <button class="choice-btn" onclick="pick4('mt1',2,1,1,'mt1_q2')">イ：下がる</button>
+    <button class="choice-btn" onclick="pick4('mt1',2,2,1,'mt1_q2')">ウ：動かない</button>
+    <button class="choice-btn" onclick="pick4('mt1',2,3,1,'mt1_q2')">エ：左右に広がる</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q2"></div>
+  <div class="msample" id="samp_mt1_q2">正解: イ：下がる　息を吸うときは横隔膜が下がり、胸の中の空間が広がって肺がふくらみます。</div>
+</div>
+<div class="q-block" id="qblock_mt1_q3">
+  <h4>Q3. 肺が自分でふくらんだりちぢんだりできないのはなぜか。</h4>
+  <div class="choice-list" id="choices_mt1_q3">
+    <button class="choice-btn" onclick="pick4('mt1',3,0,0,'mt1_q3')">ア：肺には筋肉がないから</button>
+    <button class="choice-btn" onclick="pick4('mt1',3,1,0,'mt1_q3')">イ：肺は骨でできているから</button>
+    <button class="choice-btn" onclick="pick4('mt1',3,2,0,'mt1_q3')">ウ：肺には血管がないから</button>
+    <button class="choice-btn" onclick="pick4('mt1',3,3,0,'mt1_q3')">エ：肺は気管とつながっていないから</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q3"></div>
+  <div class="msample" id="samp_mt1_q3">正解: ア：肺には筋肉がないから　肺には筋肉がないので、ろっ骨と横隔膜の動きによって空気を出し入れしています。</div>
+</div>
+<div class="q-block" id="qblock_mt1_q4">
+  <h4>Q4. 息をはくときの、ろっ骨と横隔膜の動きの組み合わせとして正しいものはどれか。</h4>
+  <div class="choice-list" id="choices_mt1_q4">
+    <button class="choice-btn" onclick="pick4('mt1',4,0,0,'mt1_q4')">ア：ろっ骨は下がり、横隔膜は上がる</button>
+    <button class="choice-btn" onclick="pick4('mt1',4,1,0,'mt1_q4')">イ：ろっ骨は上がり、横隔膜は下がる</button>
+    <button class="choice-btn" onclick="pick4('mt1',4,2,0,'mt1_q4')">ウ：ろっ骨も横隔膜も上がる</button>
+    <button class="choice-btn" onclick="pick4('mt1',4,3,0,'mt1_q4')">エ：ろっ骨も横隔膜も下がる</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q4"></div>
+  <div class="msample" id="samp_mt1_q4">正解: ア：ろっ骨は下がり、横隔膜は上がる　息をはくときは、ろっ骨が下がり、横隔膜が上がって、胸の中がせまくなり肺がちぢみます。</div>
+</div>
+<div class="q-block" id="qblock_mt1_q5">
+  <h4>Q5. 図の表の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="kokyuu2.png" alt="呼吸のしくみの表（番号あて）">
+  <div class="mchips" id="chips_mt1_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt1_q5_0" onclick="returnChip('mt1',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt1_q5_1" onclick="returnChip('mt1',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt1_q5_2" onclick="returnChip('mt1',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt1_q5_3" onclick="returnChip('mt1',5,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt1_q5_4" onclick="returnChip('mt1',5,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt1_q5_5" onclick="returnChip('mt1',5,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt1',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt1',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt1_q5"></div>
+  <div class="msample" id="samp_mt1_q5">答え: ①=上がる / ②=下がる / ③=ふくらむ / ④=ちぢむ / ⑤=下がる / ⑥=上がる</div>
+</div>
+      <div class="pass-banner" id="pass_mt1">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt2">
+  <div class="unit-header">
+    <div class="unit-num">2</div>
+    <h2>肺の模型で呼吸のしくみを調べよう</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="hai_mokei1.png" alt="肺のしくみを調べる模型" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>ペットボトルとゴム風船、ゴム膜を使って、呼吸のしくみを調べる<b>模型</b>をつくることができます。模型の各部分は、ヒトの体の次の部分にあたります。</p>
+<table class="exp-tbl">
+<thead><tr><th>模型</th><th>ヒトの体</th></tr></thead>
+<tbody>
+<tr><td class="nc">ガラス管（ストロー）</td><td><b>気管</b></td></tr>
+<tr><td class="nc">ゴム風船</td><td><b>肺</b></td></tr>
+<tr><td class="nc">ペットボトル</td><td><b>ろっ骨</b>で囲まれた胸の部分</td></tr>
+<tr><td class="nc">ゴム膜</td><td><b>横隔膜</b></td></tr>
+</tbody></table>
+<h3>ゴム膜（ひも）を引いたとき・もどしたとき</h3>
+<p>ゴム膜を<b>下に引く</b>と、ペットボトル内の空間が広がって圧力（気圧）が<b>下がり</b>、ゴム風船に空気が入って<b>ふくらみます</b>。これは<b>息を吸う</b>ときのようすです。</p>
+<p>ゴム膜を<b>もどす</b>と、ペットボトル内の圧力が<b>上がり</b>、ゴム風船から空気が出て<b>しぼみます</b>。これは<b>息をはく</b>ときのようすです。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・ゴム風船＝肺、ゴム膜＝横隔膜、ガラス管＝気管<br>
+・ゴム膜を引く → 圧力が下がる → 風船がふくらむ（息を吸う）<br>
+・ゴム膜をもどす → 圧力が上がる → 風船がしぼむ（息をはく）</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt2')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt2" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 4</span>
+    </button>
+    <div class="mini-section" id="mini_mt2">
+      <div class="mini-score-row" id="pips_mt2"><div class="mini-score-pip" id="pip_mt2_1"></div><div class="mini-score-pip" id="pip_mt2_2"></div><div class="mini-score-pip" id="pip_mt2_3"></div><div class="mini-score-pip" id="pip_mt2_4"></div></div>
+      <div class="q-block" id="qblock_mt2_q1">
+  <h4>Q1. 文中の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">模型のゴム風船は①、ゴム膜は②、ガラス管は③にあたる。ゴム膜を下に引くと、ペットボトル内の圧力が④、ゴム風船は⑤。これは息を⑥ときのようすを表している。</p>
+  <div class="mchips" id="chips_mt2_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt2_q1_0" onclick="returnChip('mt2',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt2_q1_1" onclick="returnChip('mt2',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt2_q1_2" onclick="returnChip('mt2',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt2_q1_3" onclick="returnChip('mt2',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt2_q1_4" onclick="returnChip('mt2',1,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt2_q1_5" onclick="returnChip('mt2',1,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt2',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt2',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q1"></div>
+  <div class="msample" id="samp_mt2_q1">答え: ①=肺 / ②=横隔膜 / ③=気管 / ④=下がり / ⑤=ふくらむ / ⑥=吸う</div>
+</div>
+<div class="q-block" id="qblock_mt2_q2">
+  <h4>Q2. 模型のゴム膜は、ヒトの体のどの部分にあたるか。</h4>
+  <div class="choice-list" id="choices_mt2_q2">
+    <button class="choice-btn" onclick="pick4('mt2',2,0,3,'mt2_q2')">ア：肺</button>
+    <button class="choice-btn" onclick="pick4('mt2',2,1,3,'mt2_q2')">イ：気管</button>
+    <button class="choice-btn" onclick="pick4('mt2',2,2,3,'mt2_q2')">ウ：ろっ骨</button>
+    <button class="choice-btn" onclick="pick4('mt2',2,3,3,'mt2_q2')">エ：横隔膜</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q2"></div>
+  <div class="msample" id="samp_mt2_q2">正解: エ：横隔膜　ゴム膜は、肺の下にある横隔膜にあたります。</div>
+</div>
+<div class="q-block" id="qblock_mt2_q3">
+  <h4>Q3. 引いたゴム膜をもとにもどすと、ゴム風船はどうなるか。</h4>
+  <div class="choice-list" id="choices_mt2_q3">
+    <button class="choice-btn" onclick="pick4('mt2',3,0,3,'mt2_q3')">ア：ふくらむ</button>
+    <button class="choice-btn" onclick="pick4('mt2',3,1,3,'mt2_q3')">イ：変わらない</button>
+    <button class="choice-btn" onclick="pick4('mt2',3,2,3,'mt2_q3')">ウ：破れる</button>
+    <button class="choice-btn" onclick="pick4('mt2',3,3,3,'mt2_q3')">エ：しぼむ</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q3"></div>
+  <div class="msample" id="samp_mt2_q3">正解: エ：しぼむ　ゴム膜をもどすとペットボトル内の圧力が上がり、ゴム風船から空気が出てしぼみます。息をはくときにあたります。</div>
+</div>
+<div class="q-block" id="qblock_mt2_q4">
+  <h4>Q4. 図の①〜⑩に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="hai4_fix.png" alt="呼吸のしくみと肺の模型（番号あて）">
+  <div class="mchips" id="chips_mt2_q4"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt2_q4_0" onclick="returnChip('mt2',4,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt2_q4_1" onclick="returnChip('mt2',4,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt2_q4_2" onclick="returnChip('mt2',4,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt2_q4_3" onclick="returnChip('mt2',4,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt2_q4_4" onclick="returnChip('mt2',4,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt2_q4_5" onclick="returnChip('mt2',4,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt2_q4_6" onclick="returnChip('mt2',4,6)">&nbsp;</span>
+    <span class="mdz-label">⑧</span><span class="mdz" id="mdz_mt2_q4_7" onclick="returnChip('mt2',4,7)">&nbsp;</span>
+    <span class="mdz-label">⑨</span><span class="mdz" id="mdz_mt2_q4_8" onclick="returnChip('mt2',4,8)">&nbsp;</span>
+    <span class="mdz-label">⑩</span><span class="mdz" id="mdz_mt2_q4_9" onclick="returnChip('mt2',4,9)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt2',4)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt2',4)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt2_q4"></div>
+  <div class="msample" id="samp_mt2_q4">答え: ①=上 / ②=下 / ③=ふくらむ / ④=ちぢむ / ⑤=下 / ⑥=上 / ⑦=肺 / ⑧=横隔膜 / ⑨=ふくらむ / ⑩=しぼむ</div>
+</div>
+      <div class="pass-banner" id="pass_mt2">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt3">
+  <div class="unit-header">
+    <div class="unit-num">3</div>
+    <h2>肺胞のつくりと気体の交換</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="haihou1.png" alt="肺胞のつくりと気体の交換" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>気管は枝分かれして<b>気管支</b>となり、その先には<b>肺胞</b>という小さな袋がたくさんついています。肺胞のまわりは<b>毛細血管</b>が取り囲んでいます。</p>
+<p>肺胞の中の空気から<b>酸素</b>が毛細血管の血液にとり入れられ（<b>赤血球</b>が運びます）、血液中の<b>二酸化炭素</b>が肺胞の中に出されます。これを<b>気体の交換（ガス交換）</b>といいます。</p>
+<p>心臓から肺へ向かう血液が流れる血管を<b>肺動脈</b>（二酸化炭素が多い血液）、肺から心臓へもどる血液が流れる血管を<b>肺静脈</b>（酸素が多い血液）といいます。</p>
+<p>肺胞がたくさんあることで、肺の内部の<b>表面積</b>が大きくなり、酸素と二酸化炭素の交換を効率よく行うことができます。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・肺胞…気管支の先の小さな袋。まわりを毛細血管が取り囲む<br>
+・肺胞で、酸素を血液にとり入れ、二酸化炭素を出す<br>
+・肺動脈（心臓→肺）…二酸化炭素が多い／肺静脈（肺→心臓）…酸素が多い<br>
+・肺胞があることで表面積が大きくなり、効率よく気体を交換できる</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt3')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt3" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt3">
+      <div class="mini-score-row" id="pips_mt3"><div class="mini-score-pip" id="pip_mt3_1"></div><div class="mini-score-pip" id="pip_mt3_2"></div><div class="mini-score-pip" id="pip_mt3_3"></div><div class="mini-score-pip" id="pip_mt3_4"></div><div class="mini-score-pip" id="pip_mt3_5"></div></div>
+      <div class="q-block" id="qblock_mt3_q1">
+  <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">気管支の先には①という小さな袋がたくさんあり、そのまわりを②が取り囲んでいる。肺胞では、空気中の③が血液にとり入れられ、血液中の④が肺胞に出される。肺胞がたくさんあることで、肺の⑤が大きくなり、効率よく気体の交換ができる。</p>
+  <div class="mchips" id="chips_mt3_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt3_q1_0" onclick="returnChip('mt3',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt3_q1_1" onclick="returnChip('mt3',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt3_q1_2" onclick="returnChip('mt3',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt3_q1_3" onclick="returnChip('mt3',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt3_q1_4" onclick="returnChip('mt3',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt3',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt3',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q1"></div>
+  <div class="msample" id="samp_mt3_q1">答え: ①=肺胞 / ②=毛細血管 / ③=酸素 / ④=二酸化炭素 / ⑤=表面積</div>
+</div>
+<div class="q-block" id="qblock_mt3_q2">
+  <h4>Q2. 肺胞がたくさんあることの利点として正しいものはどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q2">
+    <button class="choice-btn" onclick="pick4('mt3',2,0,2,'mt3_q2')">ア：肺が軽くなり、息がしやすくなる</button>
+    <button class="choice-btn" onclick="pick4('mt3',2,1,2,'mt3_q2')">イ：血液が固まりやすくなる</button>
+    <button class="choice-btn" onclick="pick4('mt3',2,2,2,'mt3_q2')">ウ：表面積が大きくなり、効率よく気体の交換ができる</button>
+    <button class="choice-btn" onclick="pick4('mt3',2,3,2,'mt3_q2')">エ：養分を吸収しやすくなる</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q2"></div>
+  <div class="msample" id="samp_mt3_q2">正解: ウ：表面積が大きくなり、効率よく気体の交換ができる　小さな肺胞がたくさんあることで、空気と血液がふれる表面積が大きくなります。小腸の柔毛と同じ考え方です。</div>
+</div>
+<div class="q-block" id="qblock_mt3_q3">
+  <h4>Q3. 肺から心臓へもどる血液が流れる血管と、その血液の特ちょうの組み合わせとして正しいものはどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q3">
+    <button class="choice-btn" onclick="pick4('mt3',3,0,3,'mt3_q3')">ア：肺静脈・二酸化炭素を多くふくむ</button>
+    <button class="choice-btn" onclick="pick4('mt3',3,1,3,'mt3_q3')">イ：肺動脈・酸素を多くふくむ</button>
+    <button class="choice-btn" onclick="pick4('mt3',3,2,3,'mt3_q3')">ウ：肺動脈・二酸化炭素を多くふくむ</button>
+    <button class="choice-btn" onclick="pick4('mt3',3,3,3,'mt3_q3')">エ：肺静脈・酸素を多くふくむ</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q3"></div>
+  <div class="msample" id="samp_mt3_q3">正解: エ：肺静脈・酸素を多くふくむ　肺から心臓へもどる血管は肺静脈です。肺胞で酸素をとり入れたばかりなので、酸素を多くふくんでいます。</div>
+</div>
+<div class="q-block" id="qblock_mt3_q4">
+  <h4>Q4. 肺胞でとり入れた酸素を全身へ運ぶ血液の成分はどれか。</h4>
+  <div class="choice-list" id="choices_mt3_q4">
+    <button class="choice-btn" onclick="pick4('mt3',4,0,3,'mt3_q4')">ア：白血球</button>
+    <button class="choice-btn" onclick="pick4('mt3',4,1,3,'mt3_q4')">イ：血小板</button>
+    <button class="choice-btn" onclick="pick4('mt3',4,2,3,'mt3_q4')">ウ：血しょう</button>
+    <button class="choice-btn" onclick="pick4('mt3',4,3,3,'mt3_q4')">エ：赤血球</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q4"></div>
+  <div class="msample" id="samp_mt3_q4">正解: エ：赤血球　赤血球にふくまれるヘモグロビンが酸素と結びついて、全身へ運びます。</div>
+</div>
+<div class="q-block" id="qblock_mt3_q5">
+  <h4>Q5. 図の①〜⑦に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="haihou2_fix.png" alt="肺胞のつくりと気体の交換（番号あて）">
+  <div class="mchips" id="chips_mt3_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt3_q5_0" onclick="returnChip('mt3',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt3_q5_1" onclick="returnChip('mt3',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt3_q5_2" onclick="returnChip('mt3',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt3_q5_3" onclick="returnChip('mt3',5,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt3_q5_4" onclick="returnChip('mt3',5,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt3_q5_5" onclick="returnChip('mt3',5,5)">&nbsp;</span>
+    <span class="mdz-label">⑦</span><span class="mdz" id="mdz_mt3_q5_6" onclick="returnChip('mt3',5,6)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt3',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt3',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt3_q5"></div>
+  <div class="msample" id="samp_mt3_q5">答え: ①=肺胞 / ②=肺静 / ③=肺動 / ④=肺静 / ⑤=酸素 / ⑥=肺動 / ⑦=二酸化炭素<br>②④は肺から心臓へもどる「肺静脈」、③⑥は心臓から肺へ向かう「肺動脈」です。</div>
+</div>
+      <div class="pass-banner" id="pass_mt3">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt4">
+  <div class="unit-header">
+    <div class="unit-num">4</div>
+    <h2>血液の成分</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="ketueki1.png" alt="血液の成分" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>血液は、固形の成分（<b>赤血球・白血球・血小板</b>）と、液体の成分（<b>血しょう</b>）からできています。</p>
+<table class="exp-tbl">
+<thead><tr><th>成分</th><th>形</th><th>はたらき</th></tr></thead>
+<tbody>
+<tr><td class="nc">赤血球</td><td>中央がくぼんだ円盤形</td><td><b>ヘモグロビン</b>という赤い色素をふくみ、<b>酸素</b>を運ぶ</td></tr>
+<tr><td class="nc">白血球</td><td>いろいろな形（形を変えて動く）</td><td>体に入った<b>細菌などの異物を分解</b>して体を守る</td></tr>
+<tr><td class="nc">血小板</td><td>小さく、不規則な形</td><td>出血したときに<b>血液を固める</b>（傷口をふさぐ）</td></tr>
+<tr><td class="nc">血しょう</td><td>液体</td><td><b>養分</b>や二酸化炭素などの<b>不要な物質</b>を運ぶ</td></tr>
+</tbody></table>
+<h3>ヘモグロビンの性質</h3>
+<p>ヘモグロビンは、<b>酸素が多いところ（肺）</b>では酸素と<b>結びつき</b>、<b>酸素が少ないところ（体の各部の細胞）</b>では酸素を<b>はなす</b>性質があります。この性質によって、肺でとり入れた酸素を全身の細胞に届けることができます。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・赤血球…ヘモグロビンで酸素を運ぶ<br>
+・白血球…細菌などの異物を分解する<br>
+・血小板…出血したとき血液を固める<br>
+・血しょう…養分や不要な物質を運ぶ（液体成分）<br>
+・ヘモグロビン…酸素が多い所で結びつき、少ない所ではなす</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt4')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt4" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt4">
+      <div class="mini-score-row" id="pips_mt4"><div class="mini-score-pip" id="pip_mt4_1"></div><div class="mini-score-pip" id="pip_mt4_2"></div><div class="mini-score-pip" id="pip_mt4_3"></div><div class="mini-score-pip" id="pip_mt4_4"></div><div class="mini-score-pip" id="pip_mt4_5"></div></div>
+      <div class="q-block" id="qblock_mt4_q1">
+  <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">血液の固形の成分のうち、酸素を運ぶのは①で、その中には②という赤い色素がふくまれている。細菌などの異物を分解するのは③、出血したときに血液を固めるのは④である。液体の成分である⑤は、養分や不要な物質を運ぶ。</p>
+  <div class="mchips" id="chips_mt4_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt4_q1_0" onclick="returnChip('mt4',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt4_q1_1" onclick="returnChip('mt4',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt4_q1_2" onclick="returnChip('mt4',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt4_q1_3" onclick="returnChip('mt4',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt4_q1_4" onclick="returnChip('mt4',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt4',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt4',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q1"></div>
+  <div class="msample" id="samp_mt4_q1">答え: ①=赤血球 / ②=ヘモグロビン / ③=白血球 / ④=血小板 / ⑤=血しょう</div>
+</div>
+<div class="q-block" id="qblock_mt4_q2">
+  <h4>Q2. ヘモグロビンの性質として正しいものはどれか。</h4>
+  <div class="choice-list" id="choices_mt4_q2">
+    <button class="choice-btn" onclick="pick4('mt4',2,0,0,'mt4_q2')">ア：酸素が多いところで酸素と結びつき、少ないところで酸素をはなす</button>
+    <button class="choice-btn" onclick="pick4('mt4',2,1,0,'mt4_q2')">イ：酸素が少ないところで酸素と結びつき、多いところで酸素をはなす</button>
+    <button class="choice-btn" onclick="pick4('mt4',2,2,0,'mt4_q2')">ウ：二酸化炭素とだけ結びつく</button>
+    <button class="choice-btn" onclick="pick4('mt4',2,3,0,'mt4_q2')">エ：養分と結びついて全身に運ぶ</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q2"></div>
+  <div class="msample" id="samp_mt4_q2">正解: ア：酸素が多いところで酸素と結びつき、少ないところで酸素をはなす　肺（酸素が多い）で酸素と結びつき、体の細胞（酸素が少ない）で酸素をはなします。</div>
+</div>
+<div class="q-block" id="qblock_mt4_q3">
+  <h4>Q3. 出血したときに血液を固めるはたらきをもつ成分はどれか。</h4>
+  <div class="choice-list" id="choices_mt4_q3">
+    <button class="choice-btn" onclick="pick4('mt4',3,0,2,'mt4_q3')">ア：赤血球</button>
+    <button class="choice-btn" onclick="pick4('mt4',3,1,2,'mt4_q3')">イ：白血球</button>
+    <button class="choice-btn" onclick="pick4('mt4',3,2,2,'mt4_q3')">ウ：血小板</button>
+    <button class="choice-btn" onclick="pick4('mt4',3,3,2,'mt4_q3')">エ：血しょう</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q3"></div>
+  <div class="msample" id="samp_mt4_q3">正解: ウ：血小板　血小板は小さく不規則な形をしていて、出血したときに血液を固めて傷口をふさぎます。</div>
+</div>
+<div class="q-block" id="qblock_mt4_q4">
+  <h4>Q4. 中央がくぼんだ円盤形をしている血液の成分はどれか。</h4>
+  <div class="choice-list" id="choices_mt4_q4">
+    <button class="choice-btn" onclick="pick4('mt4',4,0,1,'mt4_q4')">ア：白血球</button>
+    <button class="choice-btn" onclick="pick4('mt4',4,1,1,'mt4_q4')">イ：赤血球</button>
+    <button class="choice-btn" onclick="pick4('mt4',4,2,1,'mt4_q4')">ウ：血小板</button>
+    <button class="choice-btn" onclick="pick4('mt4',4,3,1,'mt4_q4')">エ：血しょう</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q4"></div>
+  <div class="msample" id="samp_mt4_q4">正解: イ：赤血球　赤血球は中央がくぼんだ円盤形をしています。</div>
+</div>
+<div class="q-block" id="qblock_mt4_q5">
+  <h4>Q5. 図の①〜④に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="ketueki2_fix.png" alt="血液の成分（番号あて）">
+  <div class="mchips" id="chips_mt4_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt4_q5_0" onclick="returnChip('mt4',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt4_q5_1" onclick="returnChip('mt4',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt4_q5_2" onclick="returnChip('mt4',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt4_q5_3" onclick="returnChip('mt4',5,3)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt4',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt4',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt4_q5"></div>
+  <div class="msample" id="samp_mt4_q5">答え: ①=白血球 / ②=血しょう / ③=赤血球 / ④=血小板</div>
+</div>
+      <div class="pass-banner" id="pass_mt4">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt5">
+  <div class="unit-header">
+    <div class="unit-num">5</div>
+    <h2>血液と細胞の間の物質のやりとり（組織液）</h2>
+  </div>
+  <div class="unit-body">
+    <div class="exp-img"><img src="sosikieki1.png" alt="毛細血管と細胞の間の物質のやりとり" style="max-width:100%;border-radius:10px;margin:10px auto;display:block;"></div>
+    <div class="exp-text"><p>毛細血管のかべはとてもうすく、<b>血しょう</b>の一部が毛細血管からしみ出して、細胞のまわりを満たしています。これを<b>組織液</b>といいます。</p>
+<p>血液と細胞の間の物質のやりとりは、この組織液を仲立ちにして行われます。</p>
+<p>・赤血球が運んできた<b>酸素</b>や、血しょうにとけた<b>養分</b>は、組織液を通して細胞にわたされます。<br>
+・細胞でできた<b>二酸化炭素</b>などの<b>不要な物質</b>は、組織液にとけて血液にもどされます。</p>
+<p>組織液の一部は<b>リンパ管</b>に入り、<b>リンパ液</b>になります。</p>
+<div class="pt-box"><b>【重要】</b><br>
+・組織液…血しょうが毛細血管からしみ出て、細胞のまわりを満たしたもの<br>
+・酸素・養分 → 細胞へ ／ 二酸化炭素・不要な物質 → 血液へ<br>
+・リンパ管に入った組織液をリンパ液という</div></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt5')">
+      🧪 ミニテストに挑戦！
+      <span id="mini-badge-mt5" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 4</span>
+    </button>
+    <div class="mini-section" id="mini_mt5">
+      <div class="mini-score-row" id="pips_mt5"><div class="mini-score-pip" id="pip_mt5_1"></div><div class="mini-score-pip" id="pip_mt5_2"></div><div class="mini-score-pip" id="pip_mt5_3"></div><div class="mini-score-pip" id="pip_mt5_4"></div></div>
+      <div class="q-block" id="qblock_mt5_q1">
+  <h4>Q1. 文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <p class="q-note">毛細血管からしみ出した①は、細胞のまわりを満たし、②とよばれる。②を通して、③や養分が細胞にわたされ、細胞からは④などの不要な物質が血液にもどされる。②の一部は⑤に入る。</p>
+  <div class="mchips" id="chips_mt5_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt5_q1_0" onclick="returnChip('mt5',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt5_q1_1" onclick="returnChip('mt5',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt5_q1_2" onclick="returnChip('mt5',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt5_q1_3" onclick="returnChip('mt5',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt5_q1_4" onclick="returnChip('mt5',1,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt5',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt5',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q1"></div>
+  <div class="msample" id="samp_mt5_q1">答え: ①=血しょう / ②=組織液 / ③=酸素 / ④=二酸化炭素 / ⑤=リンパ管</div>
+</div>
+<div class="q-block" id="qblock_mt5_q2">
+  <h4>Q2. 組織液とは何か。</h4>
+  <div class="choice-list" id="choices_mt5_q2">
+    <button class="choice-btn" onclick="pick4('mt5',2,0,1,'mt5_q2')">ア：赤血球がこわれてできた液</button>
+    <button class="choice-btn" onclick="pick4('mt5',2,1,1,'mt5_q2')">イ：血しょうが毛細血管からしみ出して、細胞のまわりを満たしたもの</button>
+    <button class="choice-btn" onclick="pick4('mt5',2,2,1,'mt5_q2')">ウ：胃から出される消化液</button>
+    <button class="choice-btn" onclick="pick4('mt5',2,3,1,'mt5_q2')">エ：じん臓でこしとられた尿のもと</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q2"></div>
+  <div class="msample" id="samp_mt5_q2">正解: イ：血しょうが毛細血管からしみ出して、細胞のまわりを満たしたもの　組織液は、血しょうの一部が毛細血管のかべからしみ出したものです。</div>
+</div>
+<div class="q-block" id="qblock_mt5_q3">
+  <h4>Q3. 細胞から組織液を通して血液にもどされる気体はどれか。</h4>
+  <div class="choice-list" id="choices_mt5_q3">
+    <button class="choice-btn" onclick="pick4('mt5',3,0,0,'mt5_q3')">ア：二酸化炭素</button>
+    <button class="choice-btn" onclick="pick4('mt5',3,1,0,'mt5_q3')">イ：酸素</button>
+    <button class="choice-btn" onclick="pick4('mt5',3,2,0,'mt5_q3')">ウ：窒素</button>
+    <button class="choice-btn" onclick="pick4('mt5',3,3,0,'mt5_q3')">エ：水素</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q3"></div>
+  <div class="msample" id="samp_mt5_q3">正解: ア：二酸化炭素　細胞の呼吸でできた二酸化炭素は、組織液にとけて血液にもどされ、肺からはき出されます。</div>
+</div>
+<div class="q-block" id="qblock_mt5_q4">
+  <h4>Q4. 図の①〜④に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="sosikieki2.png" alt="血液と細胞の物質のやりとり（番号あて）">
+  <div class="mchips" id="chips_mt5_q4"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt5_q4_0" onclick="returnChip('mt5',4,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt5_q4_1" onclick="returnChip('mt5',4,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt5_q4_2" onclick="returnChip('mt5',4,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt5_q4_3" onclick="returnChip('mt5',4,3)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt5',4)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt5',4)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt5_q4"></div>
+  <div class="msample" id="samp_mt5_q4">答え: ①=酸素 / ②=赤血球 / ③=二酸化炭素 / ④=組織液</div>
+</div>
+      <div class="pass-banner" id="pass_mt5">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt6">
+  <div class="unit-header">
+    <div class="unit-num">6</div>
+    <h2>入試問題にチャレンジ！呼吸のしくみ</h2>
+  </div>
+  <div class="unit-body">
+    
+    <div class="exp-text"><p>ここまで学んだ「呼吸のしくみ」「肺の模型」「肺胞」について、入試問題で確認しましょう。</p></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt6')">
+      🧪 確認問題に挑戦！
+      <span id="mini-badge-mt6" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt6">
+      <div class="mini-score-row" id="pips_mt6"><div class="mini-score-pip" id="pip_mt6_1"></div><div class="mini-score-pip" id="pip_mt6_2"></div><div class="mini-score-pip" id="pip_mt6_3"></div><div class="mini-score-pip" id="pip_mt6_4"></div><div class="mini-score-pip" id="pip_mt6_5"></div></div>
+      <div class="q-block" id="qblock_mt6_q1">
+  <h4>Q1. 図の模型で、ゴム膜を矢印の方向（下）に引いたときのようすとして正しいものはどれか。<span class="src">（和歌山県）</span></h4>
+  <img class="q-img" src="hai_mokei1.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt6_q1">
+    <button class="choice-btn" onclick="pick4('mt6',1,0,3,'mt6_q1')">ア：ペットボトル内の気圧が上がり、風船から空気が出る。息をはくときにあたる。</button>
+    <button class="choice-btn" onclick="pick4('mt6',1,1,3,'mt6_q1')">イ：ペットボトル内の気圧が下がり、風船から空気が出る。息をはくときにあたる。</button>
+    <button class="choice-btn" onclick="pick4('mt6',1,2,3,'mt6_q1')">ウ：ペットボトル内の気圧が上がり、風船に空気が入る。息を吸うときにあたる。</button>
+    <button class="choice-btn" onclick="pick4('mt6',1,3,3,'mt6_q1')">エ：ペットボトル内の気圧が下がり、風船に空気が入る。息を吸うときにあたる。</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q1"></div>
+  <div class="msample" id="samp_mt6_q1">正解: エ：ペットボトル内の気圧が下がり、風船に空気が入る。息を吸うときにあたる。　ゴム膜（横隔膜）を下に引くと、ペットボトル内の空間が広がって気圧が下がり、風船（肺）に空気が入ります。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q2">
+  <h4>Q2. 図は、酸素を体内にとり入れるはたらきをする器官のつくりの一部である。この器官はどれか。</h4>
+  <img class="q-img" src="hai_kakunin1.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt6_q2">
+    <button class="choice-btn" onclick="pick4('mt6',2,0,3,'mt6_q2')">ア：胃</button>
+    <button class="choice-btn" onclick="pick4('mt6',2,1,3,'mt6_q2')">イ：じん臓</button>
+    <button class="choice-btn" onclick="pick4('mt6',2,2,3,'mt6_q2')">ウ：肝臓</button>
+    <button class="choice-btn" onclick="pick4('mt6',2,3,3,'mt6_q2')">エ：肺</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q2"></div>
+  <div class="msample" id="samp_mt6_q2">正解: エ：肺　図は、肺の気管支の先にある肺胞と、そのまわりの血管のようすです。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q3">
+  <h4>Q3. 同じ図で、血管Aを流れる血液をa、血管Bを流れる血液をbとしたとき、酸素と二酸化炭素の量の関係として正しいものはどれか。<span class="src">（秋田県）</span></h4>
+  <img class="q-img" src="hai_kakunin1.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt6_q3">
+    <button class="choice-btn" onclick="pick4('mt6',3,0,3,'mt6_q3')">ア：酸素の量はaが多く、二酸化炭素の量はbが多い</button>
+    <button class="choice-btn" onclick="pick4('mt6',3,1,3,'mt6_q3')">イ：どちらの量もaが多い</button>
+    <button class="choice-btn" onclick="pick4('mt6',3,2,3,'mt6_q3')">ウ：どちらの量もbが多い</button>
+    <button class="choice-btn" onclick="pick4('mt6',3,3,3,'mt6_q3')">エ：酸素の量はbが多く、二酸化炭素の量はaが多い</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q3"></div>
+  <div class="msample" id="samp_mt6_q3">正解: エ：酸素の量はbが多く、二酸化炭素の量はaが多い　血液は血管A→肺胞→血管Bと流れます。肺胞で酸素をとり入れ、二酸化炭素を出すので、Bの血液（b）は酸素が多く、Aの血液（a）は二酸化炭素が多くなります。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q4">
+  <h4>Q4. 図は、ヒトの肺の気管支の先のつくりである。A〜Dに当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="hai_kakunin2.png" alt="問題の図">
+  <p class="q-note">A：気管支の先に多数ある小さなふくろ　B：Aをとり囲む血管　C・D：Bの中の血液とAの中の空気の間でやりとりされる物質</p>
+  <div class="mchips" id="chips_mt6_q4"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">A</span><span class="mdz" id="mdz_mt6_q4_0" onclick="returnChip('mt6',4,0)">&nbsp;</span>
+    <span class="mdz-label">B</span><span class="mdz" id="mdz_mt6_q4_1" onclick="returnChip('mt6',4,1)">&nbsp;</span>
+    <span class="mdz-label">C</span><span class="mdz" id="mdz_mt6_q4_2" onclick="returnChip('mt6',4,2)">&nbsp;</span>
+    <span class="mdz-label">D</span><span class="mdz" id="mdz_mt6_q4_3" onclick="returnChip('mt6',4,3)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt6',4)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt6',4)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q4"></div>
+  <div class="msample" id="samp_mt6_q4">答え: A=肺胞 / B=毛細血管 / C=二酸化炭素 / D=酸素<br>Cは血液から肺胞へ出される二酸化炭素、Dは肺胞から血液へとり入れられる酸素です。</div>
+</div>
+<div class="q-block" id="qblock_mt6_q5">
+  <h4>Q5. 図1・図2について、文中の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="hai_kakunin3.png" alt="問題の図">
+  <p class="q-note">図1のXは①という膜で、図2の②にあたる。図2のゴム風船は③、ストローは④にあたる。ゴム膜をつまんで下に引くと、ゴム風船は⑤。これは息を⑥ときのようすを表している。</p>
+  <div class="mchips" id="chips_mt6_q5"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt6_q5_0" onclick="returnChip('mt6',5,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt6_q5_1" onclick="returnChip('mt6',5,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt6_q5_2" onclick="returnChip('mt6',5,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt6_q5_3" onclick="returnChip('mt6',5,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt6_q5_4" onclick="returnChip('mt6',5,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt6_q5_5" onclick="returnChip('mt6',5,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt6',5)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt6',5)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt6_q5"></div>
+  <div class="msample" id="samp_mt6_q5">答え: ①=横隔膜 / ②=ゴム膜 / ③=肺 / ④=気管 / ⑤=ふくらむ / ⑥=吸った</div>
+</div>
+      <div class="pass-banner" id="pass_mt6">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+<div class="unit-card" id="card_mt7">
+  <div class="unit-header">
+    <div class="unit-num">7</div>
+    <h2>入試問題にチャレンジ！血液の成分とはたらき</h2>
+  </div>
+  <div class="unit-body">
+    
+    <div class="exp-text"><p>「血液の成分」「組織液」について、入試問題で確認しましょう。</p></div>
+    <div class="kw-list"></div>
+    <button class="mini-btn" onclick="toggleMini('mt7')">
+      🧪 確認問題に挑戦！
+      <span id="mini-badge-mt7" style="background:#fff;color:var(--pink-d);border-radius:12px;padding:2px 10px;font-size:.82rem;margin-left:8px;">0 / 5</span>
+    </button>
+    <div class="mini-section" id="mini_mt7">
+      <div class="mini-score-row" id="pips_mt7"><div class="mini-score-pip" id="pip_mt7_1"></div><div class="mini-score-pip" id="pip_mt7_2"></div><div class="mini-score-pip" id="pip_mt7_3"></div><div class="mini-score-pip" id="pip_mt7_4"></div><div class="mini-score-pip" id="pip_mt7_5"></div></div>
+      <div class="q-block" id="qblock_mt7_q1">
+  <h4>Q1. 図は、ヒトの血液の成分を表した模式図である。文中の①〜⑥に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="ketueki_kakunin1.png" alt="問題の図">
+  <p class="q-note">Aは①といい、細菌などの異物を分解してからだを守っている。小さく不規則な形をしているBは②といい、出血した血液を固めるはたらきがある。Cは③といい、中央がくぼんだ円盤状の形をしている。③の中には④という色素がふくまれている。④は⑤と結びついて⑤を全身の細胞へ運んでいる。血液の液体成分であるDは⑥といい、養分や不要物を運ぶ。</p>
+  <div class="mchips" id="chips_mt7_q1"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt7_q1_0" onclick="returnChip('mt7',1,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt7_q1_1" onclick="returnChip('mt7',1,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt7_q1_2" onclick="returnChip('mt7',1,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt7_q1_3" onclick="returnChip('mt7',1,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt7_q1_4" onclick="returnChip('mt7',1,4)">&nbsp;</span>
+    <span class="mdz-label">⑥</span><span class="mdz" id="mdz_mt7_q1_5" onclick="returnChip('mt7',1,5)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt7',1)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt7',1)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q1"></div>
+  <div class="msample" id="samp_mt7_q1">答え: ①=白血球 / ②=血小板 / ③=赤血球 / ④=ヘモグロビン / ⑤=酸素 / ⑥=血しょう</div>
+</div>
+<div class="q-block" id="qblock_mt7_q2">
+  <h4>Q2. 図の血球Bのはたらきとして正しいものはどれか。</h4>
+  <img class="q-img" src="ketueki_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q2">
+    <button class="choice-btn" onclick="pick4('mt7',2,0,2,'mt7_q2')">ア：酸素を運ぶ</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,1,2,'mt7_q2')">イ：出血したときに血液を固める</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,2,2,'mt7_q2')">ウ：細菌などの異物を分解する</button>
+    <button class="choice-btn" onclick="pick4('mt7',2,3,2,'mt7_q2')">エ：養分や不要物を運ぶ</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q2"></div>
+  <div class="msample" id="samp_mt7_q2">正解: ウ：細菌などの異物を分解する　Bは核のある大きな血球で、白血球です。細菌などの異物を分解して体を守ります。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q3">
+  <h4>Q3. 同じ図で、Cを何というか。</h4>
+  <img class="q-img" src="ketueki_kakunin2.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q3">
+    <button class="choice-btn" onclick="pick4('mt7',3,0,1,'mt7_q3')">ア：赤血球</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,1,1,'mt7_q3')">イ：血小板</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,2,1,'mt7_q3')">ウ：白血球</button>
+    <button class="choice-btn" onclick="pick4('mt7',3,3,1,'mt7_q3')">エ：血しょう</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q3"></div>
+  <div class="msample" id="samp_mt7_q3">正解: イ：血小板　Cは小さな粒で、血小板です。出血したときに血液を固めます。</div>
+</div>
+<div class="q-block" id="qblock_mt7_q4">
+  <h4>Q4. 図は、からだの各部分での血液と細胞の間の物質のやりとりを示している。文中の①〜⑤に当てはまる語句を語群から選んで入れよう。</h4>
+  <img class="q-img" src="sosikieki_kakunin.png" alt="問題の図">
+  <p class="q-note">Aは、かべがうすい1層の細胞からできた非常に細い血管で、①という。血液の液体成分である②は、Aのすき間からしみ出て細胞のまわりを流れ、③となる。血液中では、④という成分の⑤という色素のはたらきによって酸素が運ばれている。</p>
+  <div class="mchips" id="chips_mt7_q4"></div>
+  <div class="mdz-row">
+    <span class="mdz-label">①</span><span class="mdz" id="mdz_mt7_q4_0" onclick="returnChip('mt7',4,0)">&nbsp;</span>
+    <span class="mdz-label">②</span><span class="mdz" id="mdz_mt7_q4_1" onclick="returnChip('mt7',4,1)">&nbsp;</span>
+    <span class="mdz-label">③</span><span class="mdz" id="mdz_mt7_q4_2" onclick="returnChip('mt7',4,2)">&nbsp;</span>
+    <span class="mdz-label">④</span><span class="mdz" id="mdz_mt7_q4_3" onclick="returnChip('mt7',4,3)">&nbsp;</span>
+    <span class="mdz-label">⑤</span><span class="mdz" id="mdz_mt7_q4_4" onclick="returnChip('mt7',4,4)">&nbsp;</span>
+  </div>
+  <div class="btn-row">
+    <button class="check-btn" onclick="checkMiniBank('mt7',4)">✔ 答え合わせ</button>
+    <button class="sample-btn" onclick="showSample('mt7',4)">💡 答えを見る</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q4"></div>
+  <div class="msample" id="samp_mt7_q4">答え: ①=毛細血管 / ②=血しょう / ③=組織液 / ④=赤血球 / ⑤=ヘモグロビン</div>
+</div>
+<div class="q-block" id="qblock_mt7_q5">
+  <h4>Q5. 同じ図のa〜dのうち、①酸素、②養分、③二酸化炭素の移動を表す矢印の組み合わせとして正しいものはどれか。</h4>
+  <img class="q-img" src="sosikieki_kakunin.png" alt="問題の図">
+  <div class="choice-list" id="choices_mt7_q5">
+    <button class="choice-btn" onclick="pick4('mt7',5,0,2,'mt7_q5')">ア：①b　②c　③a</button>
+    <button class="choice-btn" onclick="pick4('mt7',5,1,2,'mt7_q5')">イ：①a　②d　③b</button>
+    <button class="choice-btn" onclick="pick4('mt7',5,2,2,'mt7_q5')">ウ：①a　②c　③b</button>
+    <button class="choice-btn" onclick="pick4('mt7',5,3,2,'mt7_q5')">エ：①c　②a　③d</button>
+  </div>
+  <div class="fb-msg" id="fb_mt7_q5"></div>
+  <div class="msample" id="samp_mt7_q5">正解: ウ：①a　②c　③b　酸素（a）と養分（c）は血液から細胞へ、二酸化炭素（b）は細胞から血液へ移動します。dは二酸化炭素以外の不要な物質の移動です。</div>
+</div>
+      <div class="pass-banner" id="pass_mt7">🎉 この単元クリア！すばらしい！ 🎉</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="chap-nav"><a href="jintai_ch01.html">① 消化と吸収</a><a href="jintai_ch02.html" class="now">② 呼吸と血液</a><a href="jintai_ch03.html">③ 心臓と血液の循環</a><a href="jintai_ch04.html">④ 感覚器官</a></div>
+<script>
+// ============================================================
+// State
+// ============================================================
+const miniState = {};
+const miniScore = {};
+const miniTotal = {};
+const miniDone = {};
+
+miniScore['mt1'] = 0; miniTotal['mt1'] = 5; miniDone['mt1'] = [false, false, false, false, false];
+miniScore['mt2'] = 0; miniTotal['mt2'] = 4; miniDone['mt2'] = [false, false, false, false];
+miniScore['mt3'] = 0; miniTotal['mt3'] = 5; miniDone['mt3'] = [false, false, false, false, false];
+miniScore['mt4'] = 0; miniTotal['mt4'] = 5; miniDone['mt4'] = [false, false, false, false, false];
+miniScore['mt5'] = 0; miniTotal['mt5'] = 4; miniDone['mt5'] = [false, false, false, false];
+miniScore['mt6'] = 0; miniTotal['mt6'] = 5; miniDone['mt6'] = [false, false, false, false, false];
+miniScore['mt7'] = 0; miniTotal['mt7'] = 5; miniDone['mt7'] = [false, false, false, false, false];
+
+
+// ============================================================
+// Toggle mini section
+// ============================================================
+function toggleMini(secId) {
+  const el = document.getElementById('mini_' + secId);
+  el.classList.toggle('open');
+}
+
+// ============================================================
+// Word bank: initialize
+// ============================================================
+function initMiniBank(secId, qNum, words, answers, freeGroups) {
+  const key = secId + '_q' + qNum;
+  miniState[key] = {
+    words: [...words],
+    answers: [...answers],
+    filled: new Array(answers.length).fill(null),
+    chipUsed: new Array(words.length).fill(false),
+    freeGroups: freeGroups || []
+  };
+  // Build chips in shuffled order
+  const container = document.getElementById('chips_' + key);
+  if (!container) return;
+  container.innerHTML = '';
+  const order = [...Array(words.length).keys()];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  order.forEach(i => {
+    const btn = document.createElement('button');
+    btn.className = 'mchip';
+    btn.id = 'chip_' + key + '_' + i;
+    btn.textContent = words[i];
+    btn.onclick = () => fillMDZ(secId, qNum, i);
+    container.appendChild(btn);
+  });
+}
+
+// ============================================================
+// Fill blank
+// ============================================================
+function fillMDZ(secId, qNum, chipIdx) {
+  const key = secId + '_q' + qNum;
+  const st = miniState[key];
+  if (!st || st.chipUsed[chipIdx]) return;
+  // Find first empty blank
+  const emptyIdx = st.filled.findIndex(v => v === null);
+  if (emptyIdx < 0) return;
+  st.filled[emptyIdx] = chipIdx;
+  st.chipUsed[chipIdx] = true;
+  document.getElementById('chip_' + key + '_' + chipIdx).classList.add('used');
+  const mdz = document.getElementById('mdz_' + key + '_' + emptyIdx);
+  if (mdz) { mdz.textContent = st.words[chipIdx]; mdz.classList.add('filled'); }
+}
+
+// ============================================================
+// Return chip (click on filled blank)
+// ============================================================
+function returnChip(secId, qNum, blankIdx) {
+  const key = secId + '_q' + qNum;
+  const st = miniState[key];
+  if (!st || st.filled[blankIdx] === null) return;
+  const chipIdx = st.filled[blankIdx];
+  st.filled[blankIdx] = null;
+  st.chipUsed[chipIdx] = false;
+  document.getElementById('chip_' + key + '_' + chipIdx).classList.remove('used');
+  const mdz = document.getElementById('mdz_' + key + '_' + blankIdx);
+  if (mdz) { mdz.textContent = '\u00a0'; mdz.className = 'mdz'; }
+}
+
+// ============================================================
+// Check word bank answer
+// ============================================================
+function checkMiniBank(secId, qNum) {
+  const key = secId + '_q' + qNum;
+  const st = miniState[key];
+  if (!st) return;
+  // Pre-compute which blank indices belong to freeGroups and whether each group is satisfied
+  const freeBlankSet = new Set();
+  const freeBlankCorrect = {};
+  (st.freeGroups || []).forEach(group => {
+    const filledVals = group.map(bi => st.filled[bi] !== null ? st.words[st.filled[bi]].replace(/（.*?）/,'') : null);
+    const correctVals = group.map(bi => st.answers[bi].replace(/（.*?）/,'')).slice().sort();
+    const filledSorted = [...filledVals].sort();
+    const groupOK = filledVals.every(v => v !== null) && filledSorted.every((v,i) => v === correctVals[i]);
+    group.forEach(bi => { freeBlankSet.add(bi); freeBlankCorrect[bi] = groupOK; });
+  });
+
+  let allCorrect = true;
+  st.filled.forEach((chipIdx, bi) => {
+    const mdz = document.getElementById('mdz_' + key + '_' + bi);
+    if (!mdz) return;
+    if (chipIdx === null) { allCorrect = false; return; }
+    let isCorrect;
+    if (freeBlankSet.has(bi)) {
+      isCorrect = freeBlankCorrect[bi];
+    } else {
+      const word = st.words[chipIdx];
+      const correct = st.answers[bi];
+      isCorrect = (word === correct || word.replace(/（.*?）/,'') === correct.replace(/（.*?）/,''));
+    }
+    if (isCorrect) {
+      mdz.classList.remove('wrong'); mdz.classList.add('correct');
+    } else {
+      mdz.classList.remove('correct'); mdz.classList.add('wrong');
+      allCorrect = false;
+    }
+  });
+  const fb = document.getElementById('fb_' + key);
+  if (allCorrect) {
+    if (fb) fb.textContent = '✅ 正解！すばらしい！';
+    markPass(secId, qNum - 1);
+    flowerPetals();
+  } else {
+    if (fb) fb.textContent = '❌ もう一度確認しよう！';
+  }
+}
+
+// ============================================================
+// Show sample answer
+// ============================================================
+function showSample(secId, qNum) {
+  const key = secId + '_q' + qNum;
+  const el = document.getElementById('samp_' + key);
+  if (el) el.classList.toggle('show');
+}
+
+// ============================================================
+// 4-choice picker
+// ============================================================
+function pick4(secId, qNum, chosen, correct, qid) {
+  const btns = document.querySelectorAll('#choices_' + qid + ' .choice-btn');
+  btns.forEach(b => b.disabled = true);
+  const fb = document.getElementById('fb_' + qid);
+  if (chosen === correct) {
+    btns[chosen].classList.add('correct');
+    if (fb) fb.textContent = '✅ 正解！';
+    markPass(secId, qNum - 1);
+    flowerPetals();
+  } else {
+    btns[chosen].classList.add('wrong');
+    btns[correct].classList.add('correct');
+    if (fb) fb.textContent = '❌ 残念！正解は上の緑のボタンです。';
+    document.getElementById('samp_' + qid).classList.add('show');
+  }
+}
+
+// ============================================================
+// Mark pass & check unit completion
+// ============================================================
+function markPass(secId, qIdx) {
+  if (miniDone[secId][qIdx]) return;
+  miniDone[secId][qIdx] = true;
+  miniScore[secId]++;
+  const pip = document.getElementById('pip_' + secId + '_' + (qIdx + 1));
+  if (pip) pip.classList.add('pass');
+  const badge = document.getElementById('mini-badge-' + secId);
+  if (badge) badge.textContent = miniScore[secId] + ' / ' + miniTotal[secId];
+  if (miniScore[secId] >= miniTotal[secId]) {
+    const banner = document.getElementById('pass_' + secId);
+    if (banner) banner.classList.add('show');
+    fireConfetti();
+  }
+}
+
+// ============================================================
+// Flower petals animation (single question correct)
+// ============================================================
+function flowerPetals() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  const petals = [];
+  const colors = ['#f472b6','#fb7185','#fbbf24','#34d399','#60a5fa','#a78bfa'];
+  for (let i = 0; i < 60; i++) {
+    petals.push({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * 200,
+      r: 4 + Math.random() * 6,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 3,
+      vy: 2 + Math.random() * 3,
+      rot: Math.random() * Math.PI * 2,
+      rotV: (Math.random() - 0.5) * 0.15
+    });
+  }
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    petals.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, p.r, p.r * 0.55, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+      p.x += p.vx; p.y += p.vy; p.rot += p.rotV;
+    });
+    frame++;
+    if (frame < 80) requestAnimationFrame(draw);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  draw();
+}
+
+// ============================================================
+// Confetti (unit complete)
+// ============================================================
+function fireConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  const pieces = [];
+  const colors = ['#f472b6','#fbbf24','#34d399','#60a5fa','#a78bfa','#fb7185','#fff'];
+  for (let i = 0; i < 150; i++) {
+    pieces.push({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * 300,
+      w: 8 + Math.random() * 10,
+      h: 4 + Math.random() * 6,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 5,
+      vy: 3 + Math.random() * 4,
+      rot: Math.random() * Math.PI * 2,
+      rotV: (Math.random() - 0.5) * 0.2
+    });
+  }
+  let frame2 = 0;
+  function draw2() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pieces.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+      ctx.restore();
+      p.x += p.vx; p.y += p.vy; p.rot += p.rotV;
+    });
+    frame2++;
+    if (frame2 < 140) requestAnimationFrame(draw2);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  draw2();
+}
+
+
+
+// ============================================================
+// Initialize all word banks
+// ============================================================
+
+initMiniBank('mt1',1,["筋肉", "上", "横隔膜", "ふくらむ", "上"],["筋肉", "上", "横隔膜", "ふくらむ", "上"],[]);
+initMiniBank('mt1',5,["上がる", "下がる", "ふくらむ", "ちぢむ", "下がる", "上がる"],["上がる", "下がる", "ふくらむ", "ちぢむ", "下がる", "上がる"],[]);
+initMiniBank('mt2',1,["肺", "横隔膜", "気管", "下がり", "ふくらむ", "吸う"],["肺", "横隔膜", "気管", "下がり", "ふくらむ", "吸う"],[]);
+initMiniBank('mt2',4,["上", "下", "ふくらむ", "ちぢむ", "下", "上", "肺", "横隔膜", "ふくらむ", "しぼむ"],["上", "下", "ふくらむ", "ちぢむ", "下", "上", "肺", "横隔膜", "ふくらむ", "しぼむ"],[]);
+initMiniBank('mt3',1,["肺胞", "毛細血管", "酸素", "二酸化炭素", "表面積"],["肺胞", "毛細血管", "酸素", "二酸化炭素", "表面積"],[]);
+initMiniBank('mt3',5,["肺胞", "肺静", "肺動", "肺静", "酸素", "肺動", "二酸化炭素"],["肺胞", "肺静", "肺動", "肺静", "酸素", "肺動", "二酸化炭素"],[]);
+initMiniBank('mt4',1,["赤血球", "ヘモグロビン", "白血球", "血小板", "血しょう"],["赤血球", "ヘモグロビン", "白血球", "血小板", "血しょう"],[]);
+initMiniBank('mt4',5,["白血球", "血しょう", "赤血球", "血小板"],["白血球", "血しょう", "赤血球", "血小板"],[]);
+initMiniBank('mt5',1,["血しょう", "組織液", "酸素", "二酸化炭素", "リンパ管"],["血しょう", "組織液", "酸素", "二酸化炭素", "リンパ管"],[]);
+initMiniBank('mt5',4,["酸素", "赤血球", "二酸化炭素", "組織液"],["酸素", "赤血球", "二酸化炭素", "組織液"],[]);
+initMiniBank('mt6',4,["肺胞", "毛細血管", "二酸化炭素", "酸素"],["肺胞", "毛細血管", "二酸化炭素", "酸素"],[]);
+initMiniBank('mt6',5,["横隔膜", "ゴム膜", "肺", "気管", "ふくらむ", "吸った"],["横隔膜", "ゴム膜", "肺", "気管", "ふくらむ", "吸った"],[]);
+initMiniBank('mt7',1,["白血球", "血小板", "赤血球", "ヘモグロビン", "酸素", "血しょう"],["白血球", "血小板", "赤血球", "ヘモグロビン", "酸素", "血しょう"],[]);
+initMiniBank('mt7',4,["毛細血管", "血しょう", "組織液", "赤血球", "ヘモグロビン"],["毛細血管", "血しょう", "組織液", "赤血球", "ヘモグロビン"],[]);
+
+</script>
+
+</body></html>
